@@ -32,12 +32,12 @@ public class Data : MonoBehaviour {
 	
 	public IEnumerator Start() {
 		if (statNode == null) {
-			WWW www = new WWW("http://amateurlabs.com/mbo/MedaStats.ald");
+			WWW www = new WWW("http://www.amateurlabs.com/mbo/MedaStats.ald");
 			yield return www;
 			statNode = ALDNode.ParseString(www.text);
 		}
 		if (itemNode == null) {
-			WWW www = new WWW("http://amateurlabs.com/mbo/Items.ald");
+			WWW www = new WWW("http://www.amateurlabs.com/mbo/Items.ald");
 			yield return www;
 			itemNode = ALDNode.ParseString(www.text);
 		}
