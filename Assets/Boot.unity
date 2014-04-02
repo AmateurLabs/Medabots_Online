@@ -254,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6990577ee4994d74094bff7fb7cc911d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isServer: 1
+  isServer: 0
   go: 0
   loading: 0
 --- !u!1 &1346844102

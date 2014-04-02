@@ -6,6 +6,13 @@ public class Boot : MonoBehaviour {
 	public bool isServer;
 	public bool go = false;
 	public bool loading = false;
+
+    void Awake()
+    {
+        Application.RegisterLogCallback((string msg, string stack, LogType type) => {
+            Application.ExternalEval("if (console) { console.log(\"" + type + "|" + msg + "|" + stack + "\")}");
+        });
+    }
 	
 	void Update() {
 		if (!Data.isReady) return;
