@@ -1,0 +1,16 @@
+width=20
+height=16
+warps
+	0
+		x=12
+		y=15
+		tMap=Lab Lobby
+		tX=21
+		tY=3
+	1
+		x=4
+		y=2
+		tMap=Nae's Lab
+		tX=7
+		tY=12
+npcs

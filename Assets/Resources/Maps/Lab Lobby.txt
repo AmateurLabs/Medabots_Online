@@ -1,0 +1,22 @@
+width=29
+height=16
+warps
+	0
+		x=18
+		y=15
+		tMap=Riverview City
+		tX=18
+		tY=7
+	1
+		x=28
+		y=9
+		tMap=Lab Museum
+		tX=1
+		tY=10
+	2
+		x=21
+		y=2
+		tMap=Main Lab
+		tX=12
+		tY=14
+npcs

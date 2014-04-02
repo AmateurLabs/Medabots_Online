@@ -1,0 +1,24 @@
+Male Tinpet
+	Torso=0 8 0
+	Head=4 8 1
+	Hip=0 -16 -1
+	Left Leg=0 -4 -3
+	Left Foot=0 -16 -2
+	Right Leg=-4 -4 -2
+	Right Foot=-4 -16 -1
+	Left Arm=4 -8 -5
+	Left Hand=-4 -8 -4
+	Right Arm=4 -8 2
+	Right Hand=4 -8 3
+Antacker
+	Torso=0 8 0
+	Head=4 8 1
+	Left Arm=4 -8 -5
+	Left Hand=-4 -8 -4
+	Right Arm=4 -8 2
+	Right Hand=4 -8 3
+	Hip=0 -16 -1
+	Left Leg=0 -4 -3
+	Left Foot=0 -16 -2
+	Right Leg=-4 -4 -2
+	Right Foot=-4 -16 -1

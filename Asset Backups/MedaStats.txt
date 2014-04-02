@@ -1,0 +1,7793 @@
+
+//MedabotStats versions
+//v1.0 - Initial creation
+//v1.1 - Added Bretoran and modified manta-prey(stronger)
+//v1.2 - Added Models and Model Numbers
+//     - Renamed Brass to Sailor-Multi and *** to Acehorn
+//     - Nerfed Bretoran's Rifle and Strengthened his punch
+
+meda: Noctobat
+	Head: null
+		name: Psycho Missile
+		gend: male
+		attr: Shoot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 35
+		succ: 21
+		powr: 8
+		cdmg: true
+		uses: 8
+		modl: BAT
+		modn: 
+End
+	Rarm: null
+		name: Electo Missile
+		gend: male
+		attr: Shoot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 30
+		succ: 28
+		powr: 3
+		cdmg: true
+		chrg: 14
+		cool: 8
+		modl: BAT
+		modn: 
+End
+	Larm: null
+		name: Sonic Missile
+		gend: male
+		attr: Aim Shot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 30
+		succ: 14
+		powr: 5
+		cdmg: true
+		chrg: 18
+		cool: 10
+		modl: BAT
+		modn: 
+End
+	Legs: null
+		name: Grave
+		gend: male
+		attr: Air
+		type: Anti-Air
+		armr: 25
+		prop: 67
+		evas: 48
+		defn: 37
+		prox: 14
+		remo: 23
+
+		modl: BAT
+		modn: 
+End
+
+meda: Wonder Angel
+	Head: null
+		name: Cherub Body
+		gend: female
+		attr: Interrupt
+		type: Regenerate
+		abil: Forcedrain
+		ctrl: remo
+		armr: 30
+		succ: 11
+		powr: 75
+		cdmg: false
+		uses: 4
+		modl: ANG
+		modn: 
+End
+	Rarm: null
+		name: Cherub Hand
+		gend: female
+		attr: Heal
+		type: Regenerate
+		abil: Recovery
+		ctrl: prox
+		armr: 25
+		succ: 28
+		powr: 15
+		cdmg: true
+		chrg: 8
+		cool: 12
+		modl: ANG
+		modn: 
+End
+	Larm: null
+		name: Cherub Arm
+		gend: female
+		attr: Heal
+		type: Regenerate
+		abil: Repair
+		ctrl: prox
+		armr: 25
+		succ: 5
+		powr: 18
+		cdmg: true
+		chrg: 10
+		cool: 15
+		modl: ANG
+		modn: 
+End
+	Legs: null
+		name: Cherub Leg
+		gend: female
+		attr: Air
+		type: Regenerate
+		armr: 30
+		prop: 86
+		evas: 58
+		defn: 31
+		prox: 17
+		remo: 17
+
+		modl: ANG
+		modn: 
+End
+
+meda: Air-Ptera
+	Head: null
+		name: Hidden Brake
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 50
+		succ: 35
+		powr: 16
+		cdmg: false
+		uses: 6
+		modl: PTL
+		modn: 
+End
+	Rarm: null
+		name: Pocket Sword
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 40
+		succ: 44
+		powr: 7
+		cdmg: false
+		chrg: 4
+		cool: 6
+		modl: PTL
+		modn: 
+End
+	Larm: null
+		name: Microsword
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 40
+		succ: 27
+		powr: 11
+		cdmg: true
+		chrg: 5
+		cool: 8
+		modl: PTL
+		modn: 
+End
+	Legs: null
+		name: Skyleg
+		gend: male
+		attr: Air
+		type: Grapple
+		armr: 40
+		prop: 67
+		evas: 38
+		defn: 49
+		prox: 11
+		remo: 14
+
+		modl: PTL
+		modn: 
+End
+
+meda: Paradiver
+	Head: null
+		name: Eagle Belt
+		gend: male
+		attr: Interrupt
+		type: Regenerate
+		abil: Forcedrain
+		ctrl: remo
+		armr: 35
+		succ: 48
+		powr: 40
+		cdmg: false
+		uses: 8
+		modl: BOP
+		modn: 
+End
+	Rarm: null
+		name: Hawk Hand
+		gend: male
+		attr: Interrupt
+		type: Regenerate
+		abil: Forcedrain
+		ctrl: remo
+		armr: 30
+		succ: 24
+		powr: 20
+		cdmg: false
+		chrg: 8
+		cool: 8
+		modl: BOP
+		modn: 
+End
+	Larm: null
+		name: Swan Arm
+		gend: male
+		attr: Interrupt
+		type: Regenerate
+		abil: Forcedrain
+		ctrl: remo
+		armr: 30
+		succ: 12
+		powr: 30
+		cdmg: false
+		chrg: 10
+		cool: 10
+		modl: BOP
+		modn: 
+End
+	Legs: null
+		name: Turkey Leg
+		gend: male
+		attr: Air
+		type: Regenerate
+		armr: 30
+		prop: 72
+		evas: 43
+		defn: 37
+		prox: 14
+		remo: 26
+
+
+
+		modl: BOP
+		modn: 
+End
+
+meda: Dragonfly
+	Head: null
+		name: Hardweighter
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Press
+		ctrl: remo
+		armr: 35
+		succ: 48
+		powr: 16
+		cdmg: false
+		uses: 6
+		modl: DRF
+		modn: 
+End
+	Rarm: null
+		name: Heavyweighter
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Press
+		ctrl: remo
+		armr: 30
+		succ: 44
+		powr: 10
+		cdmg: false
+		chrg: 14
+		cool: 8
+		modl: DRF
+		modn: 
+End
+	Larm: null
+		name: Veryweighter
+		gend: male
+		attr: Aim Shot
+		type: Gravity
+		abil: Press
+		ctrl: remo
+		armr: 30
+		succ: 32
+		powr: 12
+		cdmg: false
+		chrg: 18
+		cool: 10
+		modl: DRF
+		modn: 
+End
+	Legs: null
+		name: Flyfly
+		gend: male
+		attr: Air
+		type: Gravity
+		armr: 40
+		prop: 72
+		evas: 53
+		defn: 31
+		prox: 8
+		remo: 17
+
+		modl: DRF
+		modn: 
+End
+
+meda: Crimson King
+	Head: null
+		name: Peck Strike
+		gend: male
+		attr: Berserk
+		type: Destroy
+		abil: Destroy
+		ctrl: prox
+		armr: 50
+		succ: 21
+		powr: 60
+		cdmg: true
+		uses: 3
+		modl: CKN
+		modn: 
+End
+	Rarm: null
+		name: Dondon Punch
+		gend: male
+		attr: Berserk
+		type: Destroy
+		abil: Destroy
+		ctrl: prox
+		armr: 45
+		succ: 28
+		powr: 23
+		cdmg: true
+		chrg: 6
+		cool: 12
+		modl: CKN
+		modn: 
+End
+	Larm: null
+		name: Dopa Punch
+		gend: male
+		attr: Berserk
+		type: Destroy
+		abil: Destroy
+		ctrl: prox
+		armr: 45
+		succ: 14
+		powr: 35
+		cdmg: true
+		chrg: 8
+		cool: 15
+		modl: CKN
+		modn: 
+End
+	Legs: null
+		name: Wannafly
+		gend: male
+		attr: Air
+		type: Destroy
+		armr: 45
+		prop: 62
+		evas: 33
+		defn: 43
+		prox: 11
+		remo: 20
+
+		modl: CKN
+		modn: 
+End
+
+meda: Utopian
+	Head: null
+		name: Phanta
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Confusion
+		ctrl: remo
+		armr: 25
+		succ: 20
+		powr: 0
+		cdmg: false
+		uses: 4
+		modl: NMR
+		modn: 
+End
+	Rarm: null
+		name: Obstruct
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Confusion
+		ctrl: remo
+		armr: 20
+		succ: 16
+		powr: 0
+		cdmg: false
+		chrg: 10
+		cool: 10
+		modl: NMR
+		modn: 
+End
+	Larm: null
+		name: Disruptor
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Chaos
+		ctrl: remo
+		armr: 20
+		succ: 18
+		powr: 0
+		cdmg: false
+		chrg: 13
+		cool: 13
+		modl: NMR
+		modn: 
+End
+	Legs: null
+		name: Dreamer
+		gend: male
+		attr: Air
+		type: Interrupt
+		armr: 35
+		prop: 82
+		evas: 43
+		defn: 31
+		prox: 5
+		remo: 23
+
+		modl: NMR
+		modn: 
+End
+
+meda: Windsail
+	Head: null
+		name: Changa-Head
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: ItrpChange
+		ctrl: remo
+		armr: 45
+		succ: 31
+		powr: 0
+		cdmg: false
+		uses: 10
+		modl: SLF
+		modn: 
+End
+	Rarm: null
+		name: Changa-Hand
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: ItrpChange
+		ctrl: remo
+		armr: 40
+		succ: 26
+		powr: 0
+		cdmg: false
+		chrg: 8
+		cool: 8
+		modl: SLF
+		modn: 
+End
+	Larm: null
+		name: Changa-Arm
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: ItrpChange
+		ctrl: remo
+		armr: 40
+		succ: 28
+		powr: 0
+		cdmg: false
+		chrg: 10
+		cool: 10
+		modl: SLF
+		modn: 
+End
+	Legs: null
+		name: Changa-Fly
+		gend: female
+		attr: Air
+		type: Transform
+		armr: 40
+		prop: 74
+		evas: 52
+		defn: 41
+		prox: 11
+		remo: 23
+
+
+
+		modl: SLF
+		modn: 
+End
+
+meda: Draken
+	Head: null
+		name: Appealsound
+		gend: female
+		attr: Interrupt
+		type: Release
+		abil: Force Bind
+		ctrl: remo
+		armr: 15
+		succ: 12
+		powr: 0
+		cdmg: false
+		uses: 6
+		modl: SLN
+		modn: 
+End
+	Rarm: null
+		name: Side Muffler
+		gend: female
+		attr: Interrupt
+		type: Release
+		abil: Force Bind
+		ctrl: remo
+		armr: 10
+		succ: 16
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 12
+		modl: SLN
+		modn: 
+End
+	Larm: null
+		name: Silencer
+		gend: female
+		attr: Interrupt
+		type: Release
+		abil: Force Bind
+		ctrl: remo
+		armr: 10
+		succ: 8
+		powr: 0
+		cdmg: false
+		chrg: 8
+		cool: 15
+		modl: SLN
+		modn: 
+End
+	Legs: null
+		name: Singer
+		gend: female
+		attr: Air
+		type: Release
+		armr: 35
+		prop: 98
+		evas: 40
+		defn: 36
+		prox: 14
+		remo: 20
+
+		modl: SLN
+		modn: 
+End
+
+meda: Propolis
+	Head: null
+		name: Hexadon
+		gend: male
+		attr: Strike
+		type: Movement
+		abil: Bug
+		ctrl: prox
+		armr: 35
+		succ: 26
+		powr: 20
+		cdmg: false
+		uses: 5
+		modl: BEE
+		modn: 
+End
+	Rarm: null
+		name: Mistouch
+		gend: male
+		attr: Strike
+		type: Movement
+		abil: Bug
+		ctrl: prox
+		armr: 30
+		succ: 34
+		powr: 10
+		cdmg: false
+		chrg: 10
+		cool: 18
+		modl: BEE
+		modn: 
+End
+	Larm: null
+		name: Stinger
+		gend: male
+		attr: Berserk
+		type: Movement
+		abil: Bug
+		ctrl: prox
+		armr: 30
+		succ: 17
+		powr: 15
+		cdmg: true
+		chrg: 13
+		cool: 23
+		modl: BEE
+		modn: 
+End
+	Legs: null
+		name: Insecto-Wings
+		gend: male
+		attr: Air
+		type: Movement
+		armr: 35
+		prop: 77
+		evas: 48
+		defn: 25
+		prox: 8
+		remo: 20
+
+		modl: BEE
+		modn: 
+End
+
+meda: Phoenix
+	Head: null
+		name: Blastgun
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Fire
+		ctrl: prox
+		armr: 35
+		succ: 21
+		powr: 20
+		cdmg: false
+		uses: 6
+		modl: PHX
+		modn: 
+End
+	Rarm: null
+		name: Fire Gun
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Fire
+		ctrl: prox
+		armr: 30
+		succ: 28
+		powr: 10
+		cdmg: false
+		chrg: 8
+		cool: 14
+		modl: PHX
+		modn: 
+End
+	Larm: null
+		name: Flame Gun
+		gend: male
+		attr: Berserk
+		type: Flow
+		abil: Fire
+		ctrl: prox
+		armr: 30
+		succ: 14
+		powr: 15
+		cdmg: true
+		chrg: 10
+		cool: 18
+		modl: PHX
+		modn: 
+End
+	Legs: null
+		name: Red Tail
+		gend: male
+		attr: Air
+		type: Flow
+		armr: 30
+		prop: 77
+		evas: 38
+		defn: 43
+		prox: 17
+		remo: 17
+
+		modl: PHX
+		modn: 
+End
+
+meda: Femjet
+	Head: null
+		name: Cockpit
+		gend: female
+		attr: Shoot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 45
+		succ: 9
+		powr: 13
+		cdmg: true
+		uses: 4
+		modl: PLN
+		modn: 
+End
+	Rarm: null
+		name: Stabilizer
+		gend: female
+		attr: Shoot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 40
+		succ: 16
+		powr: 6
+		cdmg: true
+		chrg: 14
+		cool: 8
+		modl: PLN
+		modn: 
+End
+	Larm: null
+		name: Wing
+		gend: female
+		attr: Aim Shot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 40
+		succ: 8
+		powr: 10
+		cdmg: true
+		chrg: 18
+		cool: 10
+		modl: PLN
+		modn: 
+End
+	Legs: null
+		name: Jet Engine
+		gend: female
+		attr: Air
+		type: Anti-Air
+		armr: 25
+		prop: 92
+		evas: 64
+		defn: 26
+		prox: 8
+		remo: 26
+
+
+
+		modl: PLN
+		modn: 
+End
+
+meda: Rappy
+	Head: null
+		name: Fame Mascot
+		gend: male
+		attr: Interrupt
+		type: Regenerate
+		abil: Forcedrain
+		ctrl: remo
+		armr: 45
+		succ: 23
+		powr: 30
+		cdmg: false
+		uses: 6
+		modl: RAP
+		modn: 
+End
+	Rarm: null
+		name: Bubble Blow
+		gend: male
+		attr: Aim Shot
+		type: Regenerate
+		abil: Sacrifice
+		ctrl: remo
+		armr: 30
+		succ: 52
+		powr: 40
+		cdmg: true
+		chrg: 12
+		cool: 6
+		modl: RAP
+		modn: 
+End
+	Larm: null
+		name: Balloon Blow
+		gend: male
+		attr: Aim Shot
+		type: Regenerate
+		abil: Sacrifice
+		ctrl: remo
+		armr: 20
+		succ: 26
+		powr: 60
+		cdmg: true
+		chrg: 15
+		cool: 8
+		modl: RAP
+		modn: 
+End
+	Legs: null
+		name: Airline
+		gend: male
+		attr: Air
+		type: Regenerate
+		armr: 35
+		prop: 72
+		evas: 43
+		defn: 37
+		prox: 11
+		remo: 20
+
+
+
+
+		modl: RAP
+		modn: 
+End
+
+meda: Churlybear
+	Head: null
+		name: Spreader
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 40
+		succ: 53
+		powr: 12
+		cdmg: false
+		uses: 10
+		modl: BER
+		modn: 
+End
+	Rarm: null
+		name: Smasher
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 35
+		succ: 70
+		powr: 6
+		cdmg: false
+		chrg: 15
+		cool: 10
+		modl: BER
+		modn: 
+End
+	Larm: null
+		name: Splasher
+		gend: male
+		attr: Aim Shot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 35
+		succ: 35
+		powr: 9
+		cdmg: false
+		chrg: 19
+		cool: 13
+		modl: BER
+		modn: 
+End
+	Legs: null
+		name: Anti-Grav
+		gend: male
+		attr: Float
+		type: Gravity
+		armr: 65
+		prop: 17
+		evas: 23
+		defn: 36
+		prox: 13
+		remo: 13
+
+		modl: BER
+		modn: 
+End
+
+meda: Haniwa
+	Head: null
+		name: Clay Flash
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelOptic
+		ctrl: remo
+		armr: 70
+		succ: 0
+		powr: 0
+		cdmg: false
+		uses: 0
+		modl: HNI
+		modn: 
+End
+	Rarm: null
+		name: Hand Flash
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelOptic
+		ctrl: remo
+		armr: 65
+		succ: 0
+		powr: 0
+		cdmg: false
+		chrg: 5
+		cool: 12
+		modl: HNI
+		modn: 
+End
+	Larm: null
+		name: Arm Flash
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelOptic
+		ctrl: remo
+		armr: 65
+		succ: 0
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 15
+		modl: HNI
+		modn: 
+End
+	Legs: null
+		name: Teacup
+		gend: male
+		attr: Float
+		type: Cancel
+		armr: 75
+		prop: 12
+		evas: 18
+		defn: 54
+		prox: 19
+		remo: 1
+
+		modl: HNI
+		modn: 
+End
+
+meda: Gorem
+	Head: null
+		name: Head Shutter
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelBomb
+		ctrl: remo
+		armr: 70
+		succ: 0
+		powr: 0
+		cdmg: false
+		uses: 0
+		modl: DGU
+		modn: 
+End
+	Rarm: null
+		name: Hand Shutter
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelBomb
+		ctrl: remo
+		armr: 65
+		succ: 0
+		powr: 0
+		cdmg: false
+		chrg: 5
+		cool: 12
+		modl: DGU
+		modn: 
+End
+	Larm: null
+		name: Arm Shutter
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelBomb
+		ctrl: remo
+		armr: 65
+		succ: 0
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 15
+		modl: DGU
+		modn: 
+End
+	Legs: null
+		name: Blow Up
+		gend: male
+		attr: Float
+		type: Cancel
+		armr: 75
+		prop: 17
+		evas: 3
+		defn: 54
+		prox: 22
+		remo: 7
+
+
+
+		modl: DGU
+		modn: 
+End
+
+meda: Spitfire
+	Head: null
+		name: Drago Crystal
+		gend: male
+		attr: Heal
+		type: Heal
+		abil: Recovery
+		ctrl: prox
+		armr: 40
+		succ: 23
+		powr: 32
+		cdmg: false
+		uses: 6
+		modl: SPT
+		modn: 
+End
+	Rarm: null
+		name: Curewater
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: Team Form
+		ctrl: prox
+		armr: 35
+		succ: 50
+		powr: 13
+		cdmg: false
+		chrg: 7
+		cool: 16
+		modl: SPT
+		modn: 
+End
+	Larm: null
+		name: Repair Spring
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: TeamAttack
+		ctrl: prox
+		armr: 35
+		succ: 9
+		powr: 45
+		cdmg: true
+		chrg: 19
+		cool: 10
+		modl: SPT
+		modn: 
+End
+	Legs: null
+		name: Dragonbed
+		gend: male
+		attr: Float
+		type: Heal
+		armr: 85
+		prop: 7
+		evas: 13
+		defn: 48
+		prox: 16
+		remo: 4
+
+		modl: SPT
+		modn: 
+End
+
+meda: Specter
+	Head: null
+		name: White Cap
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Escape
+		ctrl: remo
+		armr: 40
+		succ: 30
+		powr: 0
+		cdmg: false
+		uses: 12
+		modl: SPC
+		modn: 
+End
+	Rarm: null
+		name: White Long Arm
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Escape
+		ctrl: remo
+		armr: 35
+		succ: 24
+		powr: 0
+		cdmg: false
+		chrg: 5
+		cool: 6
+		modl: SPC
+		modn: 
+End
+	Larm: null
+		name: White Whale
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Escape
+		ctrl: remo
+		armr: 35
+		succ: 26
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 8
+		modl: SPC
+		modn: 
+End
+	Legs: null
+		name: White Belt
+		gend: male
+		attr: Float
+		type: Interrupt
+		armr: 70
+		prop: 22
+		evas: 13
+		defn: 36
+		prox: 19
+		remo: 4
+
+		modl: SPC
+		modn: 
+End
+
+meda: Moai
+	Head: null
+		name: Stonecluster
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelGrav
+		ctrl: remo
+		armr: 70
+		succ: 0
+		powr: 0
+		cdmg: false
+		uses: 0
+		modl: MAI
+		modn: 
+End
+	Rarm: null
+		name: Handcluster
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelGrav
+		ctrl: remo
+		armr: 65
+		succ: 0
+		powr: 0
+		cdmg: false
+		chrg: 5
+		cool: 12
+		modl: MAI
+		modn: 
+End
+	Larm: null
+		name: Armcluster Cancel
+		gend: male
+		attr: Interrupt
+		type: Cancel
+		abil: CancelGrav
+		ctrl: remo
+		armr: 65
+		succ: 0
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 15
+		modl: MAI
+		modn: 
+End
+	Legs: null
+		name: Tripod
+		gend: male
+		attr: Float
+		type: Cancel
+		armr: 75
+		prop: 2
+		evas: 13
+		defn: 60
+		prox: 10
+		remo: 1
+
+		modl: MAI
+		modn: 
+End
+
+meda: Jorat
+	Head: null
+		name: Full Moused
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 55
+		succ: 26
+		powr: 32
+		cdmg: false
+		uses: 8
+		modl: RAT
+		modn: 
+End
+	Rarm: null
+		name: Scout
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 50
+		succ: 34
+		powr: 16
+		cdmg: false
+		chrg: 13
+		cool: 8
+		modl: RAT
+		modn: 
+End
+	Larm: null
+		name: Spotter
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 50
+		succ: 17
+		powr: 24
+		cdmg: false
+		chrg: 16
+		cool: 10
+		modl: RAT
+		modn: 
+End
+	Legs: null
+		name: Mover
+		gend: male
+		attr: Float
+		type: Scout
+		armr: 65
+		prop: 12
+		evas: 23
+		defn: 42
+		prox: 16
+		remo: 7
+
+
+
+		modl: RAT
+		modn: 
+End
+
+meda: Sunwitch
+	Head: null
+		name: Majoram
+		gend: female
+		attr: Support
+		type: Time
+		abil: Pushover
+		ctrl: remo
+		armr: 35
+		succ: 17
+		powr: 10
+		cdmg: false
+		uses: 6
+		modl: WCH
+		modn: 
+End
+	Rarm: null
+		name: Two Cotton
+		gend: female
+		attr: Support
+		type: Time
+		abil: Pushover
+		ctrl: remo
+		armr: 30
+		succ: 22
+		powr: 5
+		cdmg: false
+		chrg: 13
+		cool: 14
+		modl: WCH
+		modn: 
+End
+	Larm: null
+		name: Boomerang
+		gend: female
+		attr: Support
+		type: Time
+		abil: Pushover
+		ctrl: remo
+		armr: 30
+		succ: 11
+		powr: 8
+		cdmg: false
+		chrg: 16
+		cool: 18
+		modl: WCH
+		modn: 
+End
+	Legs: null
+		name: Clean Box
+		gend: female
+		attr: Float
+		type: Time
+		armr: 80
+		prop: 26
+		evas: 10
+		defn: 45
+		prox: 13
+		remo: 10
+
+		modl: WCH
+		modn: 
+End
+
+meda: Saldron
+	Head: null
+		name: Sala-Head
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: AttkChange
+		ctrl: remo
+		armr: 35
+		succ: 28
+		powr: 0
+		cdmg: false
+		uses: 10
+		modl: SLD
+		modn: 
+End
+	Rarm: null
+		name: Sala-Hand
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: AttkChange
+		ctrl: remo
+		armr: 30
+		succ: 22
+		powr: 0
+		cdmg: false
+		chrg: 7
+		cool: 8
+		modl: SLD
+		modn: 
+End
+	Larm: null
+		name: Sala-Arm
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: AttkChange
+		ctrl: remo
+		armr: 30
+		succ: 24
+		powr: 0
+		cdmg: false
+		chrg: 9
+		cool: 10
+		modl: SLD
+		modn: 
+End
+	Legs: null
+		name: Sala-Tail
+		gend: female
+		attr: Float
+		type: Transform
+		armr: 75
+		prop: 8
+		evas: 16
+		defn: 50
+		prox: 16
+		remo: 13
+
+		modl: SLD
+		modn: 
+End
+
+meda: Redlace
+	Head: null
+		name: Hat Trick
+		gend: female
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 50
+		succ: 27
+		powr: 23
+		cdmg: false
+		uses: 8
+		modl: FBF
+		modn: 
+End
+	Rarm: null
+		name: Globe Trick
+		gend: female
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 45
+		succ: 36
+		powr: 11
+		cdmg: false
+		chrg: 13
+		cool: 8
+		modl: FBF
+		modn: 
+End
+	Larm: null
+		name: Bangle Trick
+		gend: female
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 45
+		succ: 18
+		powr: 18
+		cdmg: false
+		chrg: 16
+		cool: 10
+		modl: FBF
+		modn: 
+End
+	Legs: null
+		name: Floater
+		gend: female
+		attr: Float
+		type: Formation
+		armr: 70
+		prop: 20
+		evas: 22
+		defn: 35
+		prox: 22
+		remo: 4
+
+		modl: FBF
+		modn: 
+End
+
+meda: Mistyghost
+	Head: null
+		name: Void
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 70
+		succ: 20
+		powr: 72
+		cdmg: false
+		uses: 3
+		modl: GHT
+		modn: 
+End
+	Rarm: null
+		name: Avoid
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 65
+		succ: 26
+		powr: 36
+		cdmg: false
+		chrg: 10
+		cool: 23
+		modl: GHT
+		modn: 
+End
+	Larm: null
+		name: Exit
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 65
+		succ: 13
+		powr: 54
+		cdmg: false
+		chrg: 13
+		cool: 29
+		modl: GHT
+		modn: 
+End
+	Legs: null
+		name: Panic
+		gend: male
+		attr: Float
+		type: Defense
+		armr: 80
+		prop: 7
+		evas: 8
+		defn: 48
+		prox: 22
+		remo: 7
+
+
+
+		modl: GHT
+		modn: 
+End
+
+meda: Volume10
+	Head: null
+		name: Larynx
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 40
+		succ: 27
+		powr: 28
+		cdmg: true
+		uses: 6
+		modl: SNG
+		modn: 
+End
+	Rarm: null
+		name: Sound Copy
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 85
+		succ: 22
+		powr: 18
+		cdmg: false
+		chrg: 7
+		cool: 16
+		modl: SNG
+		modn: 
+End
+	Larm: null
+		name: Return Sound
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 85
+		succ: 11
+		powr: 27
+		cdmg: false
+		chrg: 9
+		cool: 20
+		modl: SNG
+		modn: 
+End
+	Legs: null
+		name: Pipe Organ
+		gend: male
+		attr: Float
+		type: Bomb
+		armr: 70
+		prop: 12
+		evas: 18
+		defn: 42
+		prox: 16
+		remo: 10
+
+		modl: SNG
+		modn: 
+End
+
+meda: Botafly
+	Head: null
+		name: Field Barrier
+		gend: female
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 35
+		succ: 14
+		powr: 30
+		cdmg: false
+		uses: 10
+		modl: FLY
+		modn: 
+End
+	Rarm: null
+		name: Energy Barrier
+		gend: female
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 30
+		succ: 24
+		powr: 15
+		cdmg: false
+		chrg: 10
+		cool: 7
+		modl: FLY
+		modn: 
+End
+	Larm: null
+		name: Force Barrier
+		gend: female
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 30
+		succ: 12
+		powr: 23
+		cdmg: false
+		chrg: 13
+		cool: 9
+		modl: FLY
+		modn: 
+End
+	Legs: null
+		name: Flower Barrier
+		gend: female
+		attr: Float
+		type: Formation
+		armr: 65
+		prop: 14
+		evas: 28
+		defn: 40
+		prox: 19
+		remo: 7
+
+		modl: FLY
+		modn: 
+End
+
+meda: Rockflower
+	Head: null
+		name: Blank Look
+		gend: male
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 55
+		succ: 35
+		powr: 16
+		cdmg: false
+		uses: 10
+		modl: DFL
+		modn: 
+End
+	Rarm: null
+		name: Leaves
+		gend: male
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 50
+		succ: 46
+		powr: 8
+		cdmg: false
+		chrg: 9
+		cool: 10
+		modl: DFL
+		modn: 
+End
+	Larm: null
+		name: Stem
+		gend: male
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 50
+		succ: 23
+		powr: 12
+		cdmg: false
+		chrg: 11
+		cool: 13
+		modl: DFL
+		modn: 
+End
+	Legs: null
+		name: Fiyun Ball
+		gend: male
+		attr: Float
+		type: Time
+		armr: 80
+		prop: 22
+		evas: 3
+		defn: 48
+		prox: 10
+		remo: 10
+
+		modl: DFL
+		modn: 
+End
+
+meda: Babyblu
+	Head: null
+		name: Fractrue
+		gend: male
+		attr: Interrupt
+		type: Release
+		abil: Force Bind
+		ctrl: remo
+		armr: 60
+		succ: 9
+		powr: 0
+		cdmg: false
+		uses: 8
+		modl: BAY
+		modn: 
+End
+	Rarm: null
+		name: Past Touch
+		gend: male
+		attr: Interrupt
+		type: Release
+		abil: Confusion
+		ctrl: remo
+		armr: 70
+		succ: 12
+		powr: 0
+		cdmg: false
+		chrg: 14
+		cool: 15
+		modl: BAY
+		modn: 
+End
+	Larm: null
+		name: Past Feel
+		gend: male
+		attr: Support
+		type: Release
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 80
+		succ: 13
+		powr: 15
+		cdmg: false
+		chrg: 11
+		cool: 13
+		modl: BAY
+		modn: 
+End
+	Legs: null
+		name: Umbilical
+		gend: male
+		attr: Float
+		type: Release
+		armr: 85
+		prop: 2
+		evas: 8
+		defn: 60
+		prox: 13
+		remo: 13
+
+		modl: BAY
+		modn: 
+End
+
+meda: Spidar
+	Head: null
+		name: Spydertrap
+		gend: male
+		attr: Defend
+		type: Formation
+		abil: Grap Trap
+		ctrl: prox
+		armr: 35
+		succ: 21
+		powr: 26
+		cdmg: false
+		uses: 8
+		modl: SPI
+		modn: 
+End
+	Rarm: null
+		name: Cheapertrap
+		gend: male
+		attr: Defend
+		type: Formation
+		abil: Grap Trap
+		ctrl: prox
+		armr: 45
+		succ: 28
+		powr: 13
+		cdmg: false
+		chrg: 12
+		cool: 6
+		modl: SPI
+		modn: 
+End
+	Larm: null
+		name: Cheaptrap
+		gend: male
+		attr: Defend
+		type: Formation
+		abil: Grap Trap
+		ctrl: prox
+		armr: 45
+		succ: 14
+		powr: 20
+		cdmg: false
+		chrg: 15
+		cool: 8
+		modl: SPI
+		modn: 
+End
+	Legs: null
+		name: Multi-Leg
+		gend: male
+		attr: Multi-Legged
+		type: Formation
+		armr: 20
+		prop: 23
+		evas: 32
+		defn: 73
+		prox: 19
+		remo: 6
+
+		modl: SPI
+		modn: 
+End
+
+meda: Octoclam
+	Head: null
+		name: Hatchin
+		gend: male
+		attr: Strike
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 35
+		succ: 17
+		powr: 20
+		cdmg: false
+		uses: 4
+		modl: CLA
+		modn: 
+End
+	Rarm: null
+		name: Catch
+		gend: male
+		attr: Strike
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 30
+		succ: 22
+		powr: 10
+		cdmg: false
+		chrg: 10
+		cool: 16
+		modl: CLA
+		modn: 
+End
+	Larm: null
+		name: Twist
+		gend: male
+		attr: Berserk
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 30
+		succ: 11
+		powr: 15
+		cdmg: true
+		chrg: 13
+		cool: 20
+		modl: CLA
+		modn: 
+End
+	Legs: null
+		name: Swick
+		gend: male
+		attr: Multi-Legged
+		type: Bind
+		armr: 25
+		prop: 28
+		evas: 37
+		defn: 49
+		prox: 19
+		remo: 15
+
+		modl: CLA
+		modn: 
+End
+
+meda: Magdosnake
+	Head: null
+		name: Cobrara
+		gend: male
+		attr: Strike
+		type: Movement
+		abil: Virus
+		ctrl: prox
+		armr: 35
+		succ: 12
+		powr: 30
+		cdmg: false
+		uses: 6
+		modl: SNA
+		modn: 
+End
+	Rarm: null
+		name: Changer
+		gend: male
+		attr: Strike
+		type: Movement
+		abil: Virus
+		ctrl: prox
+		armr: 30
+		succ: 16
+		powr: 15
+		cdmg: false
+		chrg: 8
+		cool: 14
+		modl: SNA
+		modn: 
+End
+	Larm: null
+		name: Snakebite
+		gend: male
+		attr: Berserk
+		type: Movement
+		abil: Virus
+		ctrl: prox
+		armr: 30
+		succ: 8
+		powr: 23
+		cdmg: true
+		chrg: 10
+		cool: 18
+		modl: SNA
+		modn: 
+End
+	Legs: null
+		name: Slither
+		gend: male
+		attr: Multi-Legged
+		type: Movement
+		armr: 20
+		prop: 33
+		evas: 32
+		defn: 61
+		prox: 16
+		remo: 12
+
+		modl: SNA
+		modn: 
+End
+
+meda: Floro
+	Head: null
+		name: Sun-Beam
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Beam
+		ctrl: remo
+		armr: 55
+		succ: 8
+		powr: 44
+		cdmg: false
+		uses: 2
+		modl: FLW
+		modn: 
+End
+	Rarm: null
+		name: Go-Up
+		gend: male
+		attr: Support
+		type: Time
+		abil: Accel Chrg
+		ctrl: remo
+		armr: 45
+		succ: 0
+		powr: 6
+		cdmg: false
+		chrg: 0
+		cool: 0
+		modl: FLW
+		modn: 
+End
+	Larm: null
+		name: Rise-Up
+		gend: male
+		attr: Support
+		type: Time
+		abil: Accel Chrg
+		ctrl: remo
+		armr: 45
+		succ: 0
+		powr: 8
+		cdmg: false
+		chrg: 0
+		cool: 0
+		modl: FLW
+		modn: 
+End
+	Legs: null
+		name: Stem-Up
+		gend: male
+		attr: Multi-Legged
+		type: Time
+		armr: 25
+		prop: 23
+		evas: 27
+		defn: 61
+		prox: 19
+		remo: 15
+
+
+		modl: FLW
+		modn: 
+End
+
+meda: Mega Emperor
+	Head: null
+		name: Deathbreak
+		gend: male
+		attr: Aim Shot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 70
+		succ: 27
+		powr: 40
+		cdmg: true
+		uses: 4
+		modl: WEA
+		modn: 
+End
+	Rarm: null
+		name: Deathmissile
+		gend: male
+		attr: Aim Shot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 60
+		succ: 24
+		powr: 60
+		cdmg: true
+		chrg: 18
+		cool: 9
+		modl: WEA
+		modn: 
+End
+	Larm: null
+		name: Deathlaser
+		gend: male
+		attr: Aim Shot
+		type: Optic
+		abil: Laser
+		ctrl: remo
+		armr: 60
+		succ: 6
+		powr: 56
+		cdmg: true
+		chrg: 25
+		cool: 13
+		modl: WEA
+		modn: 
+End
+	Legs: null
+		name: Deathcrawler
+		gend: male
+		attr: Multi-Legged
+		type: Gravity
+		armr: 70
+		prop: 18
+		evas: 22
+		defn: 61
+		prox: 19
+		remo: 18
+
+		modl: WEA
+		modn: 
+End
+
+meda: Chimerator
+	Head: null
+		name: Lionattack
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Melt
+		ctrl: prox
+		armr: 45
+		succ: 8
+		powr: 44
+		cdmg: false
+		uses: 3
+		modl: KMR
+		modn: 
+End
+	Rarm: null
+		name: Dragonattack
+		gend: male
+		attr: Strike
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 30
+		succ: 16
+		powr: 19
+		cdmg: false
+		chrg: 13
+		cool: 16
+		modl: KMR
+		modn: 
+End
+	Larm: null
+		name: Goatattack
+		gend: male
+		attr: Strike
+		type: Movement
+		abil: Virus
+		ctrl: prox
+		armr: 30
+		succ: 5
+		powr: 29
+		cdmg: true
+		chrg: 13
+		cool: 18
+		modl: KMR
+		modn: 
+End
+	Legs: null
+		name: Triple Thread
+		gend: male
+		attr: Multi-Legged
+		type: Flow
+		armr: 35
+		prop: 23
+		evas: 42
+		defn: 55
+		prox: 19
+		remo: 12
+
+		modl: KMR
+		modn: 
+End
+
+meda: Mantaprey 
+	Head: null
+		name: Kataki
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 35
+		succ: 48
+		powr: 35
+		cdmg: false
+		uses: 4
+		modl: MTS
+		modn: 
+End
+	Rarm: null
+		name: Kamakubi
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 20
+		succ: 54
+		powr: 29
+		cdmg: false
+		chrg: 5
+		cool: 8
+		modl: MTS
+		modn: 
+End
+	Larm: null
+		name: Kubikiri
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 20
+		succ: 25
+		powr: 43
+		cdmg: true
+		chrg: 6
+		cool: 10
+		modl: MTS
+		modn: 
+End
+	Legs: null
+		name: Kamaki
+		gend: male
+		attr: Multi-Legged
+		type: Grapple
+		armr: 25
+		prop: 28
+		evas: 39
+		defn: 61
+		prox: 22
+		remo: 9
+
+		modl: MTS
+		modn: 
+End
+
+meda: Poison Copy
+	Head: null
+		name: Scorpion Dog
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Melt
+		ctrl: prox
+		armr: 35
+		succ: 15
+		powr: 30
+		cdmg: false
+		uses: 6
+		modl: SCP
+		modn: 
+End
+	Rarm: null
+		name: Scorpion Cat
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Melt
+		ctrl: prox
+		armr: 30
+		succ: 16
+		powr: 15
+		cdmg: false
+		chrg: 8
+		cool: 14
+		modl: SCP
+		modn: 
+End
+	Larm: null
+		name: Scorpion Rat
+		gend: male
+		attr: Berserk
+		type: Flow
+		abil: Melt
+		ctrl: prox
+		armr: 30
+		succ: 8
+		powr: 23
+		cdmg: true
+		chrg: 10
+		cool: 18
+		modl: SCP
+		modn: 
+End
+	Legs: null
+		name: Zigzag
+		gend: male
+		attr: Multi-Legged
+		type: Flow
+		armr: 15
+		prop: 23
+		evas: 32
+		defn: 67
+		prox: 22
+		remo: 12
+
+
+		modl: SCP
+		modn: 
+End
+
+meda: Robo Emperor
+	Head: null
+		name: Deathblast
+		gend: male
+		attr: Aim Shot
+		type: Gravity
+		abil: Press
+		ctrl: remo
+		armr: 70
+		succ: 4
+		powr: 45
+		cdmg: true
+		uses: 4
+		modl: WEA
+		modn: 
+End
+	Rarm: null
+		name: Deathbomb
+		gend: male
+		attr: Aim Shot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 60
+		succ: 4
+		powr: 65
+		cdmg: true
+		chrg: 18
+		cool: 9
+		modl: WEA
+		modn: 
+End
+	Larm: null
+		name: Deathbeam
+		gend: male
+		attr: Aim Shot
+		type: Optic
+		abil: Beam
+		ctrl: remo
+		armr: 60
+		succ: 4
+		powr: 60
+		cdmg: true
+		chrg: 30
+		cool: 15
+		modl: WEA
+		modn: 
+End
+	Legs: null
+		name: Spaghetti
+		gend: male
+		attr: Multi-Legged
+		type: Shoot
+		armr: 70
+		prop: 13
+		evas: 22
+		defn: 67
+		prox: 13
+		remo: 18
+
+		modl: WEA
+		modn: 
+End
+
+meda: Redmatador
+	Head: null
+		name: Body Attack
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Full Block
+		ctrl: prox
+		armr: 50
+		succ: 21
+		powr: 0
+		cdmg: false
+		uses: 2
+		modl: COW
+		modn: 
+End
+	Rarm: null
+		name: Saber
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 40
+		succ: 34
+		powr: 12
+		cdmg: false
+		chrg: 4
+		cool: 6
+		modl: COW
+		modn: 
+End
+	Larm: null
+		name: Mant Shield
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 60
+		succ: 14
+		powr: 11
+		cdmg: false
+		chrg: 3
+		cool: 10
+		modl: COW
+		modn: 
+End
+	Legs: null
+		name: Dash Attack
+		gend: male
+		attr: Multi-Legged
+		type: Grapple
+		armr: 30
+		prop: 18
+		evas: 32
+		defn: 73
+		prox: 13
+		remo: 6
+
+		modl: COW
+		modn: 
+End
+
+meda: Tentaclam
+	Head: null
+		name: Headband
+		gend: male
+		attr: Strike
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 35
+		succ: 8
+		powr: 32
+		cdmg: false
+		uses: 4
+		modl: CLA
+		modn: 
+End
+	Rarm: null
+		name: Wire
+		gend: male
+		attr: Strike
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 30
+		succ: 10
+		powr: 16
+		cdmg: false
+		chrg: 10
+		cool: 16
+		modl: CLA
+		modn: 
+End
+	Larm: null
+		name: Net
+		gend: male
+		attr: Berserk
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 30
+		succ: 5
+		powr: 24
+		cdmg: true
+		chrg: 13
+		cool: 20
+		modl: CLA
+		modn: 
+End
+	Legs: null
+		name: Octoleg
+		gend: male
+		attr: Multi-Legged
+		type: Bind
+		armr: 25
+		prop: 13
+		evas: 32
+		defn: 61
+		prox: 25
+		remo: 12
+
+		modl: CLA
+		modn: 
+End
+
+meda: Acehorn
+	Head: null
+		name: Guardian
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Stability
+		ctrl: prox
+		armr: 50
+		succ: 36
+		powr: 0
+		cdmg: false
+		uses: 4
+		modl: UNI
+		modn: 
+End
+	Rarm: null
+		name: Cancellor
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Stability
+		ctrl: prox
+		armr: 45
+		succ: 48
+		powr: 0
+		cdmg: false
+		chrg: 4
+		cool: 8
+		modl: UNI
+		modn: 
+End
+	Larm: null
+		name: Recovery
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Stability
+		ctrl: prox
+		armr: 45
+		succ: 24
+		powr: 0
+		cdmg: false
+		chrg: 5
+		cool: 10
+		modl: UNI
+		modn: 
+End
+	Legs: null
+		name: Ace Hooves
+		gend: male
+		attr: Multi-Legged
+		type: Release
+		armr: 30
+		prop: 23
+		evas: 42
+		defn: 55
+		prox: 16
+		remo: 9
+
+
+		modl: UNI
+		modn: 
+End
+
+meda: Multikolor
+	Head: null
+		name: Invisi Body
+		gend: male
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 50
+		succ: 30
+		powr: 26
+		cdmg: false
+		uses: 6
+		modl: CNO
+		modn: 
+End
+	Rarm: null
+		name: Invisi Hand
+		gend: male
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 45
+		succ: 40
+		powr: 13
+		cdmg: false
+		chrg: 12
+		cool: 6
+		modl: CNO
+		modn: 
+End
+	Larm: null
+		name: Invisi Arm
+		gend: male
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 45
+		succ: 20
+		powr: 20
+		cdmg: false
+		chrg: 15
+		cool: 8
+		modl: CNO
+		modn: 
+End
+	Legs: null
+		name: Twirl
+		gend: male
+		attr: Multi-Legged
+		type: Conceal
+		armr: 25
+		prop: 23
+		evas: 32
+		defn: 61
+		prox: 19
+		remo: 12
+
+		modl: CNO
+		modn: 
+End
+
+meda: Kuraba
+	Head: null
+		name: Gun Krab
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 35
+		succ: 26
+		powr: 32
+		cdmg: false
+		uses: 4
+		modl: CLB
+		modn: 
+End
+	Rarm: null
+		name: Decoy Krab
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 80
+		succ: 34
+		powr: 11
+		cdmg: false
+		chrg: 8
+		cool: 12
+		modl: CLB
+		modn: 
+End
+	Larm: null
+		name: Real Krab
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 10
+		succ: 12
+		powr: 47
+		cdmg: true
+		chrg: 1
+		cool: 2
+		modl: CLB
+		modn: 
+End
+	Legs: null
+		name: Sidejump
+		gend: male
+		attr: Multi-Legged
+		type: Grapple
+		armr: 25
+		prop: 33
+		evas: 27
+		defn: 49
+		prox: 25
+		remo: 12
+
+
+		modl: CLB
+		modn: 
+End
+
+meda: Rokusho
+	Head: null
+		name: Antenna
+		gend: male
+		attr: Support
+		type: Grapple
+		abil: Scout
+		ctrl: remo
+		armr: 50
+		succ: 18
+		powr: 42
+		cdmg: false
+		uses: 5
+		modl: KWG
+		modn: 
+End
+	Rarm: null
+		name: Sword
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 20
+		succ: 32
+		powr: 22
+		cdmg: false
+		chrg: 3
+		cool: 4
+		modl: KWG
+		modn: 
+End
+	Larm: null
+		name: Pipo Hammer
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 20
+		succ: 11
+		powr: 39
+		cdmg: true
+		chrg: 4
+		cool: 5
+		modl: KWG
+		modn: 
+End
+	Legs: null
+		name: Tatacker
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 45
+		prop: 28
+		evas: 32
+		defn: 36
+		prox: 22
+		remo: 9
+
+		modl: KWG
+		modn: 
+End
+
+meda: Metabee
+	Head: null
+		name: Missile
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Missile
+		ctrl: remo
+		armr: 35
+		succ: 24
+		powr: 32
+		cdmg: true
+		uses: 4
+		modl: KBT
+		modn: 
+End
+	Rarm: null
+		name: Revolver
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 30
+		succ: 36
+		powr: 19
+		cdmg: false
+		chrg: 4
+		cool: 3
+		modl: KBT
+		modn: 
+End
+	Larm: null
+		name: Submachinegun
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 30
+		succ: 10
+		powr: 36
+		cdmg: false
+		chrg: 5
+		cool: 4
+		modl: KBT
+		modn: 
+End
+	Legs: null
+		name: Ochitsuka
+		gend: male
+		attr: Two-Legged
+		type: Shoot
+		armr: 45
+		prop: 43
+		evas: 17
+		defn: 42
+		prox: 10
+		remo: 21
+
+
+		modl: KBT
+		modn: 
+End
+
+meda: Krosserdog
+	Head: null
+		name: Head Cannon
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 45
+		succ: 35
+		powr: 26
+		cdmg: false
+		uses: 6
+		modl: DOG
+		modn: 
+End
+	Rarm: null
+		name: Aim Rifle
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 40
+		succ: 46
+		powr: 13
+		cdmg: false
+		chrg: 7
+		cool: 5
+		modl: DOG
+		modn: 
+End
+	Larm: null
+		name: Battle Rifle
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 40
+		succ: 23
+		powr: 20
+		cdmg: false
+		chrg: 9
+		cool: 6
+		modl: DOG
+		modn: 
+End
+	Legs: null
+		name: Howzer
+		gend: male
+		attr: Two-Legged
+		type: Shoot
+		armr: 50
+		prop: 38
+		evas: 17
+		defn: 36
+		prox: 13
+		remo: 21
+
+		modl: DOG
+		modn: 
+End
+
+meda: Turnmonkey
+	Head: null
+		name: Downstream
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Use Drain
+		ctrl: remo
+		armr: 50
+		succ: 17
+		powr: 8
+		cdmg: false
+		uses: 12
+		modl: MON
+		modn: 
+End
+	Rarm: null
+		name: Countfall
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Use Drain
+		ctrl: remo
+		armr: 45
+		succ: 22
+		powr: 4
+		cdmg: false
+		chrg: 7
+		cool: 7
+		modl: MON
+		modn: 
+End
+	Larm: null
+		name: Timefall
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Use Drain
+		ctrl: remo
+		armr: 45
+		succ: 11
+		powr: 6
+		cdmg: false
+		chrg: 9
+		cool: 9
+		modl: MON
+		modn: 
+End
+	Legs: null
+		name: Pita Pata
+		gend: male
+		attr: Two-Legged
+		type: Interrupt
+		armr: 35
+		prop: 33
+		evas: 12
+		defn: 48
+		prox: 16
+		remo: 15
+
+		modl: MON
+		modn: 
+End
+
+meda: Zorin
+	Head: null
+		name: Broad Antenna
+		gend: male
+		attr: Support
+		type: Grapple
+		abil: Scout
+		ctrl: remo
+		armr: 65
+		succ: 33
+		powr: 26
+		cdmg: false
+		uses: 5
+		modl: KWG
+		modn: 
+End
+	Rarm: null
+		name: Shin-Sword
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 30
+		succ: 62
+		powr: 15
+		cdmg: false
+		chrg: 7
+		cool: 9
+		modl: KWG
+		modn: 
+End
+	Larm: null
+		name: Bee-Bee Hammer
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 34
+		powr: 32
+		cdmg: true
+		chrg: 8
+		cool: 11
+		modl: KWG
+		modn: 
+End
+	Legs: null
+		name: Tatakawa
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 50
+		prop: 33
+		evas: 27
+		defn: 24
+		prox: 22
+		remo: 15
+
+		modl: KWG
+		modn: 
+End
+
+meda: Bayonet
+	Head: null
+		name: Reaction Bomb
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Missile
+		ctrl: remo
+		armr: 45
+		succ: 47
+		powr: 20
+		cdmg: true
+		uses: 4
+		modl: KBT
+		modn: 
+End
+	Rarm: null
+		name: Revolven
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 40
+		succ: 68
+		powr: 14
+		cdmg: false
+		chrg: 7
+		cool: 5
+		modl: KBT
+		modn: 
+End
+	Larm: null
+		name: Sumachingun
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 40
+		succ: 38
+		powr: 23
+		cdmg: false
+		chrg: 9
+		cool: 6
+		modl: KBT
+		modn: 
+End
+	Legs: null
+		name: Ochitsukan
+		gend: male
+		attr: Two-Legged
+		type: Shoot
+		armr: 50
+		prop: 38
+		evas: 27
+		defn: 30
+		prox: 10
+		remo: 18
+
+
+		modl: KBT
+		modn: 
+End
+
+meda: Belzelga
+	Head: null
+		name: Helmet
+		gend: male
+		attr: Heal
+		type: Destroy
+		abil: Repair
+		ctrl: prox
+		armr: 35
+		succ: 9
+		powr: 26
+		cdmg: true
+		uses: 2
+		modl: DVL
+		modn: 
+End
+	Rarm: null
+		name: Helmight
+		gend: male
+		attr: Aim Shot
+		type: Destroy
+		abil: Sacrifice
+		ctrl: remo
+		armr: 15
+		succ: 26
+		powr: 61
+		cdmg: true
+		chrg: 16
+		cool: 9
+		modl: DVL
+		modn: 
+End
+	Larm: null
+		name: Helming
+		gend: male
+		attr: Aim Shot
+		type: Destroy
+		abil: Sacrifice
+		ctrl: remo
+		armr: 15
+		succ: 13
+		powr: 92
+		cdmg: true
+		chrg: 20
+		cool: 11
+		modl: DVL
+		modn: 
+End
+	Legs: null
+		name: Helcaos
+		gend: male
+		attr: Two-Legged
+		type: Destroy
+		armr: 55
+		prop: 23
+		evas: 17
+		defn: 36
+		prox: 19
+		remo: 12
+
+		modl: DVL
+		modn: 
+End
+
+meda: Peppercat
+	Head: null
+		name: Lightcircuit
+		gend: female
+		attr: Strike
+		type: Stop
+		abil: Thunder
+		ctrl: prox
+		armr: 30
+		succ: 14
+		powr: 23
+		cdmg: false
+		uses: 4
+		modl: CAT
+		modn: 
+End
+	Rarm: null
+		name: Lightjump
+		gend: female
+		attr: Strike
+		type: Stop
+		abil: Thunder
+		ctrl: prox
+		armr: 25
+		succ: 18
+		powr: 11
+		cdmg: false
+		chrg: 11
+		cool: 17
+		modl: CAT
+		modn: 
+End
+	Larm: null
+		name: Light Blow
+		gend: female
+		attr: Berserk
+		type: Stop
+		abil: Thunder
+		ctrl: prox
+		armr: 25
+		succ: 9
+		powr: 18
+		cdmg: true
+		chrg: 14
+		cool: 21
+		modl: CAT
+		modn: 
+End
+	Legs: null
+		name: Quick Alert
+		gend: female
+		attr: Two-Legged
+		type: Stop
+		armr: 40
+		prop: 34
+		evas: 38
+		defn: 25
+		prox: 22
+		remo: 9
+
+		modl: CAT
+		modn: 
+End
+
+meda: Neutranurse
+	Head: null
+		name: Holy Helm
+		gend: female
+		attr: Defend
+		type: Defense
+		abil: Full Block
+		ctrl: prox
+		armr: 45
+		succ: 14
+		powr: 0
+		cdmg: false
+		uses: 4
+		modl: NAS
+		modn: 
+End
+	Rarm: null
+		name: Donor
+		gend: female
+		attr: Heal
+		type: Heal
+		abil: AutoRecover
+		ctrl: prox
+		armr: 40
+		succ: 30
+		powr: 9
+		cdmg: false
+		chrg: 7
+		cool: 13
+		modl: NAS
+		modn: 
+End
+	Larm: null
+		name: Translate
+		gend: female
+		attr: Heal
+		type: Heal
+		abil: AutoRecover
+		ctrl: prox
+		armr: 40
+		succ: 15
+		powr: 14
+		cdmg: false
+		chrg: 9
+		cool: 16
+		modl: NAS
+		modn: 
+End
+	Legs: null
+		name: Petticoat
+		gend: female
+		attr: Two-Legged
+		type: Heal
+		armr: 40
+		prop: 52
+		evas: 14
+		defn: 30
+		prox: 16
+		remo: 12
+
+		modl: NAS
+		modn: 
+End
+
+meda: Sailor-Multi
+	Head: null
+		name: Variablehair
+		gend: female
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 45
+		succ: 18
+		powr: 53
+		cdmg: false
+		uses: 3
+		modl: SLR
+		modn: 
+End
+	Rarm: null
+		name: Pateri Vulcan
+		gend: female
+		attr: Shoot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 25
+		succ: 26
+		powr: 19
+		cdmg: false
+		chrg: 4
+		cool: 3
+		modl: SLR
+		modn: 
+End
+	Larm: null
+		name: Short Shot
+		gend: female
+		attr: Aim Shot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 25
+		succ: 23
+		powr: 19
+		cdmg: false
+		chrg: 5
+		cool: 4
+		modl: SLR
+		modn: 
+End
+	Legs: null
+		name: Flaregather
+		gend: female
+		attr: Two-Legged
+		type: Shoot
+		armr: 45
+		prop: 46
+		evas: 26
+		defn: 25
+		prox: 10
+		remo: 21
+
+
+		modl: SLR
+		modn: 
+End
+
+meda: Sumilodon
+	Head: null
+		name: Hunter
+		gend: male
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 50
+		succ: 11
+		powr: 38
+		cdmg: false
+		uses: 6
+		modl: STG
+		modn: 
+End
+	Rarm: null
+		name: Flexorsword
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 30
+		succ: 22
+		powr: 46
+		cdmg: true
+		chrg: 7
+		cool: 10
+		modl: STG
+		modn: 
+End
+	Larm: null
+		name: Straw Hammer
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 14
+		powr: 26
+		cdmg: false
+		chrg: 5
+		cool: 8
+		modl: STG
+		modn: 
+End
+	Legs: null
+		name: Sharpedge
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 45
+		prop: 43
+		evas: 22
+		defn: 36
+		prox: 19
+		remo: 12
+
+		modl: STG
+		modn: 
+End
+
+meda: Warbandit
+	Head: null
+		name: Tension Up
+		gend: male
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 50
+		succ: 17
+		powr: 26
+		cdmg: false
+		uses: 6
+		modl: KLN
+		modn: 
+End
+	Rarm: null
+		name: Shoot Barrel
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 30
+		succ: 24
+		powr: 42
+		cdmg: false
+		chrg: 10
+		cool: 7
+		modl: KLN
+		modn: 
+End
+	Larm: null
+		name: Range Shooter
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 30
+		succ: 16
+		powr: 23
+		cdmg: false
+		chrg: 8
+		cool: 5
+		modl: KLN
+		modn: 
+End
+	Legs: null
+		name: Abductor
+		gend: male
+		attr: Two-Legged
+		type: Shoot
+		armr: 45
+		prop: 33
+		evas: 32
+		defn: 30
+		prox: 13
+		remo: 18
+
+		modl: KLN
+		modn: 
+End
+
+meda: Attack-Tyrano
+	Head: null
+		name: Breathfire
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Fire
+		ctrl: prox
+		armr: 35
+		succ: 20
+		powr: 18
+		cdmg: false
+		uses: 6
+		modl: TIR
+		modn: 
+End
+	Rarm: null
+		name: Crab-Hit
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 32
+		powr: 21
+		cdmg: true
+		chrg: 3
+		cool: 10
+		modl: TIR
+		modn: 
+End
+	Larm: null
+		name: Strike-Hit
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 16
+		powr: 17
+		cdmg: true
+		chrg: 4
+		cool: 5
+		modl: TIR
+		modn: 
+End
+	Legs: null
+		name: Attach Leg
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 40
+		prop: 23
+		evas: 27
+		defn: 42
+		prox: 16
+		remo: 18
+
+		modl: TIR
+		modn: 
+End
+
+meda: Banisher
+	Head: null
+		name: Sweat Mantle
+		gend: male
+		attr: Defend
+		type: Counterattack
+		abil: CntrAttk
+		ctrl: prox
+		armr: 65
+		succ: 20
+		powr: 40
+		cdmg: false
+		uses: 4
+		modl: BAN
+		modn: 
+End
+	Rarm: null
+		name: Sweat Cape
+		gend: male
+		attr: Defend
+		type: Counterattack
+		abil: CntrAttk
+		ctrl: prox
+		armr: 60
+		succ: 26
+		powr: 70
+		cdmg: false
+		chrg: 9
+		cool: 9
+		modl: BAN
+		modn: 
+End
+	Larm: null
+		name: Sweat Cloak
+		gend: male
+		attr: Defend
+		type: Counterattack
+		abil: CntrAttk
+		ctrl: prox
+		armr: 60
+		succ: 13
+		powr: 60
+		cdmg: false
+		chrg: 11
+		cool: 11
+		modl: BAN
+		modn: 
+End
+	Legs: null
+		name: Klip Klop
+		gend: male
+		attr: Two-Legged
+		type: Counterattack
+		armr: 55
+		prop: 23
+		evas: 22
+		defn: 42
+		prox: 16
+		remo: 15
+
+
+		modl: BAN
+		modn: 
+End
+
+meda: Stonemirror
+	Head: null
+		name: Death Grin
+		gend: female
+		attr: Berserk
+		type: Destroy
+		abil: Destroy
+		ctrl: prox
+		armr: 45
+		succ: 14
+		powr: 98
+		cdmg: true
+		uses: 2
+		modl: MED
+		modn: 
+End
+	Rarm: null
+		name: Death Beckon
+		gend: female
+		attr: Berserk
+		type: Destroy
+		abil: Destroy
+		ctrl: prox
+		armr: 40
+		succ: 10
+		powr: 49
+		cdmg: true
+		chrg: 7
+		cool: 13
+		modl: MED
+		modn: 
+End
+	Larm: null
+		name: Death Curl
+		gend: female
+		attr: Berserk
+		type: Destroy
+		abil: Destroy
+		ctrl: prox
+		armr: 40
+		succ: 5
+		powr: 74
+		cdmg: true
+		chrg: 9
+		cool: 16
+		modl: MED
+		modn: 
+End
+	Legs: null
+		name: Tail end
+		gend: female
+		attr: Two-Legged
+		type: Destroy
+		armr: 40
+		prop: 28
+		evas: 32
+		defn: 35
+		prox: 16
+		remo: 15
+
+		modl: MED
+		modn: 
+End
+
+meda: Circulis
+	Head: null
+		name: Charmee
+		gend: female
+		attr: Support
+		type: Time
+		abil: Drain Chrg
+		ctrl: remo
+		armr: 45
+		succ: 26
+		powr: 13
+		cdmg: false
+		uses: 6
+		modl: SAQ
+		modn: 
+End
+	Rarm: null
+		name: Charmy Hand
+		gend: female
+		attr: Support
+		type: Time
+		abil: Drain Chrg
+		ctrl: remo
+		armr: 40
+		succ: 34
+		powr: 6
+		cdmg: false
+		chrg: 9
+		cool: 9
+		modl: SAQ
+		modn: 
+End
+	Larm: null
+		name: Charmy Arm
+		gend: female
+		attr: Support
+		type: Time
+		abil: Drain Chrg
+		ctrl: remo
+		armr: 40
+		succ: 17
+		powr: 10
+		cdmg: false
+		chrg: 11
+		cool: 11
+		modl: SAQ
+		modn: 
+End
+	Legs: null
+		name: Charmy Leg
+		gend: female
+		attr: Two-Legged
+		type: Time
+		armr: 30
+		prop: 40
+		evas: 32
+		defn: 30
+		prox: 10
+		remo: 18
+
+		modl: SAQ
+		modn: 
+End
+
+meda: Pretty Prime
+	Head: null
+		name: Reflect Mirror
+		gend: female
+		attr: Defend
+		type: Counterattack
+		abil: CntrAttk
+		ctrl: prox
+		armr: 60
+		succ: 11
+		powr: 20
+		cdmg: false
+		uses: 2
+		modl: FAL
+		modn: 
+End
+	Rarm: null
+		name: Don't Move
+		gend: female
+		attr: Strike
+		type: Stop
+		abil: Freeze
+		ctrl: prox
+		armr: 25
+		succ: 14
+		powr: 13
+		cdmg: false
+		chrg: 11
+		cool: 13
+		modl: FAL
+		modn: 
+End
+	Larm: null
+		name: Shine Shield
+		gend: female
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 85
+		succ: 30
+		powr: 11
+		cdmg: false
+		chrg: 6
+		cool: 21
+		modl: FAL
+		modn: 
+End
+	Legs: null
+		name: Temple Master
+		gend: female
+		attr: Two-Legged
+		type: Counterattack
+		armr: 40
+		prop: 28
+		evas: 26
+		defn: 40
+		prox: 16
+		remo: 15
+
+		modl: FAL
+		modn: 
+End
+
+meda: Nin-Ninja
+	Head: null
+		name: Cover-Up
+		gend: male
+		attr: Defend
+		type: Formation
+		abil: Grap Trap
+		ctrl: prox
+		armr: 50
+		succ: 29
+		powr: 20
+		cdmg: false
+		uses: 5
+		modl: NIN
+		modn: 
+End
+	Rarm: null
+		name: Ninja Dagger
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 30
+		succ: 62
+		powr: 12
+		cdmg: false
+		chrg: 0
+		cool: 0
+		modl: NIN
+		modn: 
+End
+	Larm: null
+		name: Ninja Sword
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 30
+		succ: 31
+		powr: 12
+		cdmg: true
+		chrg: 0
+		cool: 0
+		modl: NIN
+		modn: 
+End
+	Legs: null
+		name: Tiptoe
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 35
+		prop: 28
+		evas: 32
+		defn: 24
+		prox: 22
+		remo: 12
+
+
+		modl: NIN
+		modn: 
+End
+
+meda: Foxuno
+	Head: null
+		name: Foxarmor
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 35
+		succ: 62
+		powr: 12
+		cdmg: false
+		uses: 8
+		modl: KTN
+		modn: 
+End
+	Rarm: null
+		name: Fencing
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 30
+		succ: 42
+		powr: 15
+		cdmg: false
+		chrg: 5
+		cool: 7
+		modl: KTN
+		modn: 
+End
+	Larm: null
+		name: Rapier
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 30
+		succ: 21
+		powr: 23
+		cdmg: true
+		chrg: 6
+		cool: 9
+		modl: KTN
+		modn: 
+End
+	Legs: null
+		name: Hakama
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 40
+		prop: 33
+		evas: 22
+		defn: 36
+		prox: 13
+		remo: 15
+
+		modl: KTN
+		modn: 
+End
+
+meda: Kintaro
+	Head: null
+		name: Sumo Press
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Press
+		ctrl: remo
+		armr: 35
+		succ: 24
+		powr: 22
+		cdmg: false
+		uses: 8
+		modl: KIN
+		modn: 
+End
+	Rarm: null
+		name: Light Axe
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 22
+		powr: 21
+		cdmg: false
+		chrg: 5
+		cool: 7
+		modl: KIN
+		modn: 
+End
+	Larm: null
+		name: Great Axe
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 11
+		powr: 32
+		cdmg: true
+		chrg: 6
+		cool: 9
+		modl: KIN
+		modn: 
+End
+	Legs: null
+		name: Kinta Leg
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 50
+		prop: 28
+		evas: 12
+		defn: 48
+		prox: 16
+		remo: 12
+
+		modl: KIN
+		modn: 
+End
+
+meda: Agadama
+	Head: null
+		name: Air Bag
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Full Block
+		ctrl: prox
+		armr: 50
+		succ: 20
+		powr: 0
+		cdmg: false
+		uses: 3
+		modl: TAN
+		modn: 
+End
+	Rarm: null
+		name: Spin Knuckle
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 18
+		powr: 16
+		cdmg: false
+		chrg: 3
+		cool: 4
+		modl: TAN
+		modn: 
+End
+	Larm: null
+		name: Megaton Punch
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 14
+		powr: 24
+		cdmg: true
+		chrg: 5
+		cool: 8
+		modl: TAN
+		modn: 
+End
+	Legs: null
+		name: Chi Leg
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 40
+		prop: 43
+		evas: 22
+		defn: 24
+		prox: 16
+		remo: 15
+
+		modl: TAN
+		modn: 
+End
+
+meda: Samurai
+	Head: null
+		name: Samurai Blast
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 25
+		succ: 17
+		powr: 44
+		cdmg: true
+		uses: 2
+		modl: SAM
+		modn: 
+End
+	Rarm: null
+		name: Beam Saber
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 20
+		succ: 32
+		powr: 26
+		cdmg: true
+		chrg: 6
+		cool: 9
+		modl: SAM
+		modn: 
+End
+	Larm: null
+		name: Samurai Saber
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 20
+		succ: 16
+		powr: 40
+		cdmg: true
+		chrg: 8
+		cool: 11
+		modl: SAM
+		modn: 
+End
+	Legs: null
+		name: Samurai Kick
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 55
+		prop: 33
+		evas: 22
+		defn: 36
+		prox: 19
+		remo: 9
+
+
+		modl: SAM
+		modn: 
+End
+
+meda: Cyandog
+	Head: null
+		name: Linear Cannon
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 45
+		succ: 27
+		powr: 32
+		cdmg: false
+		uses: 6
+		modl: DOG
+		modn: 
+End
+	Rarm: null
+		name: Snipe Rifle
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 40
+		succ: 36
+		powr: 16
+		cdmg: false
+		chrg: 7
+		cool: 5
+		modl: DOG
+		modn: 
+End
+	Larm: null
+		name: Assault
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 40
+		succ: 18
+		powr: 24
+		cdmg: false
+		chrg: 9
+		cool: 6
+		modl: DOG
+		modn: 
+End
+	Legs: null
+		name: Gunner
+		gend: male
+		attr: Two-Legged
+		type: Shoot
+		armr: 50
+		prop: 38
+		evas: 22
+		defn: 42
+		prox: 10
+		remo: 15
+
+		modl: DOG
+		modn: 
+End
+
+meda: Wigwamo
+	Head: null
+		name: Acid Con
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Melt
+		ctrl: prox
+		armr: 35
+		succ: 15
+		powr: 24
+		cdmg: false
+		uses: 6
+		modl: NTB
+		modn: 
+End
+	Rarm: null
+		name: Acid Bomb
+		gend: male
+		attr: Strike
+		type: Flow
+		abil: Melt
+		ctrl: prox
+		armr: 30
+		succ: 20
+		powr: 12
+		cdmg: false
+		chrg: 9
+		cool: 15
+		modl: NTB
+		modn: 
+End
+	Larm: null
+		name: Assault
+		gend: male
+		attr: Berserk
+		type: Flow
+		abil: Melt
+		ctrl: prox
+		armr: 30
+		succ: 10
+		powr: 18
+		cdmg: true
+		chrg: 11
+		cool: 19
+		modl: NTB
+		modn: 
+End
+	Legs: null
+		name: Gunner
+		gend: male
+		attr: Two-Legged
+		type: Flow
+		armr: 45
+		prop: 33
+		evas: 12
+		defn: 48
+		prox: 10
+		remo: 18
+
+		modl: NTB
+		modn: 
+End
+
+meda: Rabudo
+	Head: null
+		name: Aircon
+		gend: male
+		attr: Support
+		type: Time
+		abil: Rapid Chrg
+		ctrl: remo
+		armr: 50
+		succ: 32
+		powr: 0
+		cdmg: false
+		uses: 8
+		modl: RBT
+		modn: 
+End
+	Rarm: null
+		name: Stopwatch
+		gend: male
+		attr: Support
+		type: Time
+		abil: Rapid Chrg
+		ctrl: remo
+		armr: 45
+		succ: 42
+		powr: 0
+		cdmg: false
+		chrg: 9
+		cool: 9
+		modl: RBT
+		modn: 
+End
+	Larm: null
+		name: Fan
+		gend: male
+		attr: Support
+		type: Time
+		abil: Rapid Chrg
+		ctrl: remo
+		armr: 45
+		succ: 21
+		powr: 0
+		cdmg: false
+		chrg: 11
+		cool: 11
+		modl: RBT
+		modn: 
+End
+	Legs: null
+		name: Hop
+		gend: male
+		attr: Two-Legged
+		type: Time
+		armr: 40
+		prop: 38
+		evas: 27
+		defn: 24
+		prox: 16
+		remo: 18
+
+		modl: RBT
+		modn: 
+End
+
+meda: Cosmo-Alien
+	Head: null
+		name: Mute Body
+		gend: male
+		attr: Interrupt
+		type: Transform
+		abil: Change
+		ctrl: remo
+		armr: 65
+		succ: 55
+		powr: 0
+		cdmg: false
+		uses: 6
+		modl: ALI
+		modn: 
+End
+	Rarm: null
+		name: Mute Hand
+		gend: male
+		attr: Interrupt
+		type: Transform
+		abil: Change
+		ctrl: remo
+		armr: 60
+		succ: 50
+		powr: 0
+		cdmg: false
+		chrg: 11
+		cool: 11
+		modl: ALI
+		modn: 
+End
+	Larm: null
+		name: Mute Arm
+		gend: male
+		attr: Interrupt
+		type: Transform
+		abil: Change
+		ctrl: remo
+		armr: 60
+		succ: 52
+		powr: 0
+		cdmg: false
+		chrg: 14
+		cool: 14
+		modl: ALI
+		modn: 
+End
+	Legs: null
+		name: Mute Leg
+		gend: male
+		attr: Two-Legged
+		type: Transform
+		armr: 50
+		prop: 23
+		evas: 22
+		defn: 36
+		prox: 13
+		remo: 12
+
+
+		modl: ALI
+		modn: 
+End
+
+meda: Blackram
+	Head: null
+		name: Devil Body
+		gend: male
+		attr: Berserk
+		type: Destroy
+		abil: Hammer
+		ctrl: prox
+		armr: 55
+		succ: 9
+		powr: 62
+		cdmg: true
+		uses: 2
+		modl: DVL
+		modn: 
+End
+	Rarm: null
+		name: Devil Hand
+		gend: male
+		attr: Berserk
+		type: Destroy
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 12
+		powr: 31
+		cdmg: true
+		chrg: 7
+		cool: 10
+		modl: DVL
+		modn: 
+End
+	Larm: null
+		name: Devil Arm
+		gend: male
+		attr: Berserk
+		type: Destroy
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 6
+		powr: 60
+		cdmg: true
+		chrg: 9
+		cool: 13
+		modl: DVL
+		modn: 
+End
+	Legs: null
+		name: Devil Leg
+		gend: male
+		attr: Two-Legged
+		type: Destroy
+		armr: 55
+		prop: 28
+		evas: 12
+		defn: 48
+		prox: 19
+		remo: 9
+
+		modl: DVL
+		modn: 
+End
+
+meda: Sailormate
+	Head: null
+		name: Fight Oneshot
+		gend: female
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 45
+		succ: 33
+		powr: 33
+		cdmg: false
+		uses: 3
+		modl: SLR
+		modn: 
+End
+	Rarm: null
+		name: Machinegun
+		gend: female
+		attr: Shoot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 25
+		succ: 20
+		powr: 24
+		cdmg: false
+		chrg: 4
+		cool: 3
+		modl: SLR
+		modn: 
+End
+	Larm: null
+		name: Magnum
+		gend: female
+		attr: Aim Shot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 25
+		succ: 18
+		powr: 25
+		cdmg: false
+		chrg: 5
+		cool: 4
+		modl: SLR
+		modn: 
+End
+	Legs: null
+		name: Mini-Scout
+		gend: female
+		attr: Two-Legged
+		type: Shoot
+		armr: 45
+		prop: 46
+		evas: 20
+		defn: 30
+		prox: 13
+		remo: 15
+
+		modl: SLR
+		modn: 
+End
+
+meda: Auroraqueen
+	Head: null
+		name: Blizzard
+		gend: female
+		attr: Strike
+		type: Stop
+		abil: Freeze
+		ctrl: prox
+		armr: 30
+		succ: 8
+		powr: 33
+		cdmg: false
+		uses: 4
+		modl: QUN
+		modn: 
+End
+	Rarm: null
+		name: Ice
+		gend: female
+		attr: Strike
+		type: Stop
+		abil: Freeze
+		ctrl: prox
+		armr: 25
+		succ: 10
+		powr: 16
+		cdmg: false
+		chrg: 11
+		cool: 17
+		modl: QUN
+		modn: 
+End
+	Larm: null
+		name: Freeze
+		gend: female
+		attr: Berserk
+		type: Stop
+		abil: Freeze
+		ctrl: prox
+		armr: 25
+		succ: 5
+		powr: 25
+		cdmg: true
+		chrg: 14
+		cool: 21
+		modl: QUN
+		modn: 
+End
+	Legs: null
+		name: Sled
+		gend: female
+		attr: Two-Legged
+		type: Stop
+		armr: 35
+		prop: 52
+		evas: 26
+		defn: 20
+		prox: 19
+		remo: 12
+
+		modl: QUN
+		modn: 
+End
+
+meda: Icknite
+	Head: null
+		name: Charm Point
+		gend: female
+		attr: Defend
+		type: Formation
+		abil: Shot Trap
+		ctrl: prox
+		armr: 45
+		succ: 29
+		powr: 18
+		cdmg: false
+		uses: 9
+		modl: KNI
+		modn: 
+End
+	Rarm: null
+		name: Explosive Ball
+		gend: female
+		attr: Shoot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 25
+		succ: 32
+		powr: 13
+		cdmg: true
+		chrg: 0
+		cool: 0
+		modl: KNI
+		modn: 
+End
+	Larm: null
+		name: Hand Grenade
+		gend: female
+		attr: Aim Shot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 25
+		succ: 16
+		powr: 19
+		cdmg: true
+		chrg: 0
+		cool: 0
+		modl: KNI
+		modn: 
+End
+	Legs: null
+		name: Tabi
+		gend: female
+		attr: Two-Legged
+		type: Bomb
+		armr: 30
+		prop: 40
+		evas: 38
+		defn: 30
+		prox: 22
+		remo: 9
+
+
+		modl: KNI
+		modn: 
+End
+
+meda: Hopstar
+	Head: null
+		name: Bodycon
+		gend: female
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 45
+		succ: 11
+		powr: 63
+		cdmg: false
+		uses: 3
+		modl: BNY
+		modn: 
+End
+	Rarm: null
+		name: Hand Whip
+		gend: female
+		attr: Support
+		type: Time
+		abil: Rapid Chrg
+		ctrl: remo
+		armr: 40
+		succ: 22
+		powr: 0
+		cdmg: false
+		chrg: 11
+		cool: 11
+		modl: BNY
+		modn: 
+End
+	Larm: null
+		name: Arm Candy
+		gend: female
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 40
+		succ: 11
+		powr: 25
+		cdmg: false
+		chrg: 14
+		cool: 14
+		modl: BNY
+		modn: 
+End
+	Legs: null
+		name: High Leg
+		gend: female
+		attr: Two-Legged
+		type: Time
+		armr: 50
+		prop: 34
+		evas: 14
+		defn: 40
+		prox: 16
+		remo: 18
+
+		modl: BNY
+		modn: 
+End
+
+meda: Papyrak
+	Head: null
+		name: Feeler
+		gend: male
+		attr: Defend
+		type: Counterattack
+		abil: Strenghten
+		ctrl: prox
+		armr: 15
+		succ: 24
+		powr: 10
+		cdmg: false
+		uses: 0
+		modl: LHB
+		modn: 
+End
+	Rarm: null
+		name: Metakiller
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 10
+		succ: 32
+		powr: 50
+		cdmg: false
+		chrg: 6
+		cool: 9
+		modl: LHB
+		modn: 
+End
+	Larm: null
+		name: Thudarm
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 10
+		succ: 16
+		powr: 29
+		cdmg: true
+		chrg: 5
+		cool: 8
+		modl: LHB
+		modn: 
+End
+	Legs: null
+		name: Tatakick
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 35
+		prop: 43
+		evas: 17
+		defn: 42
+		prox: 22
+		remo: 9
+
+		modl: LHB
+		modn: 
+End
+
+meda: Ambiguous
+	Head: null
+		name: Mis-Sile
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 25
+		succ: 32
+		powr: 38
+		cdmg: true
+		uses: 2
+		modl: MWB
+		modn: 
+End
+	Rarm: null
+		name: Thunder Hit
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 10
+		succ: 36
+		powr: 34
+		cdmg: false
+		chrg: 9
+		cool: 6
+		modl: MWB
+		modn: 
+End
+	Larm: null
+		name: Gato Ring
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 10
+		succ: 19
+		powr: 29
+		cdmg: false
+		chrg: 5
+		cool: 4
+		modl: MWB
+		modn: 
+End
+	Legs: null
+		name: Falldown
+		gend: male
+		attr: Two-Legged
+		type: Shoot
+		armr: 35
+		prop: 33
+		evas: 32
+		defn: 30
+		prox: 16
+		remo: 21
+
+		modl: MWB
+		modn: 
+End
+
+meda: Greatmotha
+	Head: null
+		name: Greet Con
+		gend: female
+		attr: Heal
+		type: Revive
+		abil: Reactivate
+		ctrl: prox
+		armr: 15
+		succ: 20
+		powr: 13
+		cdmg: false
+		uses: 4
+		modl: GDS
+		modn: 
+End
+	Rarm: null
+		name: Zeta Complete
+		gend: female
+		attr: Heal
+		type: Revive
+		abil: Reactivate
+		ctrl: prox
+		armr: 10
+		succ: 26
+		powr: 6
+		cdmg: false
+		chrg: 5
+		cool: 15
+		modl: GDS
+		modn: 
+End
+	Larm: null
+		name: Zeta Perfect
+		gend: female
+		attr: Heal
+		type: Revive
+		abil: Reactivate
+		ctrl: prox
+		armr: 10
+		succ: 13
+		powr: 10
+		cdmg: false
+		chrg: 6
+		cool: 19
+		modl: GDS
+		modn: 
+End
+	Legs: null
+		name: Zeta Entire
+		gend: female
+		attr: Two-Legged
+		type: Revive
+		armr: 50
+		prop: 40
+		evas: 26
+		defn: 20
+		prox: 19
+		remo: 15
+
+
+		modl: GDS
+		modn: 
+End
+
+meda: Twinkle
+	Head: null
+		name: Beauty Mask
+		gend: female
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 30
+		succ: 20
+		powr: 43
+		cdmg: false
+		uses: 8
+		modl: CMP
+		modn: 
+End
+	Rarm: null
+		name: C-Right
+		gend: female
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 15
+		succ: 68
+		powr: 9
+		cdmg: false
+		chrg: 9
+		cool: 6
+		modl: CMP
+		modn: 
+End
+	Larm: null
+		name: C-Left
+		gend: female
+		attr: Aim Shot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 15
+		succ: 19
+		powr: 29
+		cdmg: false
+		chrg: 9
+		cool: 6
+		modl: CMP
+		modn: 
+End
+	Legs: null
+		name: Tamofoot
+		gend: female
+		attr: Two-Legged
+		type: Shoot
+		armr: 35
+		prop: 40
+		evas: 20
+		defn: 35
+		prox: 13
+		remo: 21
+
+		modl: CMP
+		modn: 
+End
+
+meda: Armorparadeen
+	Head: null
+		name: Clear Armor
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 100
+		succ: 20
+		powr: 16
+		cdmg: false
+		uses: 6
+		modl: NIT
+		modn: 
+End
+	Rarm: null
+		name: Right Armor
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 95
+		succ: 26
+		powr: 8
+		cdmg: false
+		chrg: 6
+		cool: 16
+		modl: NIT
+		modn: 
+End
+	Larm: null
+		name: Left Armor
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 95
+		succ: 13
+		powr: 12
+		cdmg: false
+		chrg: 8
+		cool: 20
+		modl: NIT
+		modn: 
+End
+	Legs: null
+		name: Rocking Horse
+		gend: male
+		attr: Wheels
+		type: Defense
+		armr: 65
+		prop: 33
+		evas: 32
+		defn: 37
+		prox: 7
+		remo: 10
+
+		modl: NIT
+		modn: 
+End
+
+meda: Sabotina
+	Head: null
+		name: Sombrero
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 40
+		succ: 20
+		powr: 40
+		cdmg: false
+		uses: 6
+		modl: SAB
+		modn: 
+End
+	Rarm: null
+		name: Spiky Gun
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 35
+		succ: 26
+		powr: 20
+		cdmg: false
+		chrg: 8
+		cool: 4
+		modl: SAB
+		modn: 
+End
+	Larm: null
+		name: Needle Gun
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 35
+		succ: 13
+		powr: 30
+		cdmg: false
+		chrg: 10
+		cool: 5
+		modl: SAB
+		modn: 
+End
+	Legs: null
+		name: Right-A-Way
+		gend: male
+		attr: Wheels
+		type: Shoot
+		armr: 55
+		prop: 53
+		evas: 27
+		defn: 13
+		prox: 10
+		remo: 22
+
+		modl: SAB
+		modn: 
+End
+
+meda: Spiralle
+	Head: null
+		name: Maxima Pouch
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 60
+		succ: 24
+		powr: 18
+		cdmg: false
+		uses: 5
+		modl: ANB
+		modn: 
+End
+	Rarm: null
+		name: Maxima Sword
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 55
+		succ: 42
+		powr: 9
+		cdmg: false
+		chrg: 6
+		cool: 6
+		modl: ANB
+		modn: 
+End
+	Larm: null
+		name: Maxima Drill
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 55
+		succ: 16
+		powr: 20
+		cdmg: true
+		chrg: 8
+		cool: 8
+		modl: ANB
+		modn: 
+End
+	Legs: null
+		name: First Wave
+		gend: male
+		attr: Wheels
+		type: Grapple
+		armr: 60
+		prop: 38
+		evas: 32
+		defn: 19
+		prox: 13
+		remo: 10
+
+
+		modl: ANB
+		modn: 
+End
+
+meda: Rollerman
+	Head: null
+		name: Arma-Head
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 70
+		succ: 24
+		powr: 52
+		cdmg: false
+		uses: 5
+		modl: ALM
+		modn: 
+End
+	Rarm: null
+		name: Arma-Hand
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 65
+		succ: 32
+		powr: 26
+		cdmg: false
+		chrg: 10
+		cool: 18
+		modl: ALM
+		modn: 
+End
+	Larm: null
+		name: Arma-Arm
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Half Block
+		ctrl: prox
+		armr: 65
+		succ: 24
+		powr: 39
+		cdmg: false
+		chrg: 13
+		cool: 23
+		modl: ALM
+		modn: 
+End
+	Legs: null
+		name: Side Winder
+		gend: male
+		attr: Wheels
+		type: Defense
+		armr: 65
+		prop: 33
+		evas: 22
+		defn: 37
+		prox: 7
+		remo: 19
+
+		modl: ALM
+		modn: 
+End
+
+meda: Antacker
+	Head: null
+		name: Batori Stand
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: Team Form
+		ctrl: prox
+		armr: 55
+		succ: 35
+		powr: 24
+		cdmg: false
+		uses: 6
+		modl: WAT
+		modn: 
+End
+	Rarm: null
+		name: Cannonshell
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: Team Form
+		ctrl: prox
+		armr: 50
+		succ: 46
+		powr: 12
+		cdmg: false
+		chrg: 8
+		cool: 14
+		modl: WAT
+		modn: 
+End
+	Larm: null
+		name: Cannonball
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: Team Form
+		ctrl: prox
+		armr: 50
+		succ: 23
+		powr: 18
+		cdmg: false
+		chrg: 10
+		cool: 18
+		modl: WAT
+		modn: 
+End
+	Legs: null
+		name: Fortress
+		gend: male
+		attr: Wheels
+		type: Teamwork
+		armr: 45
+		prop: 48
+		evas: 32
+		defn: 25
+		prox: 13
+		remo: 13
+
+		modl: WAT
+		modn: 
+End
+
+meda: Antldier
+	Head: null
+		name: Marcus
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: TeamAttack
+		ctrl: prox
+		armr: 40
+		succ: 20
+		powr: 52
+		cdmg: true
+		uses: 6
+		modl: SAT
+		modn: 
+End
+	Rarm: null
+		name: Shooter
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: TeamAttack
+		ctrl: prox
+		armr: 35
+		succ: 26
+		powr: 26
+		cdmg: true
+		chrg: 16
+		cool: 6
+		modl: SAT
+		modn: 
+End
+	Larm: null
+		name: Archer
+		gend: male
+		attr: Defend
+		type: Teamwork
+		abil: TeamAttack
+		ctrl: prox
+		armr: 35
+		succ: 13
+		powr: 39
+		cdmg: true
+		chrg: 20
+		cool: 8
+		modl: SAT
+		modn: 
+End
+	Legs: null
+		name: Sagittari Base
+		gend: male
+		attr: Wheels
+		type: Teamwork
+		armr: 45
+		prop: 43
+		evas: 42
+		defn: 19
+		prox: 1
+		remo: 22
+
+		modl: SAT
+		modn: 
+End
+
+meda: Toybox
+	Head: null
+		name: Toymander
+		gend: male
+		attr: Aim Shot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 40
+		succ: 38
+		powr: 20
+		cdmg: false
+		uses: 8
+		modl: HBY
+		modn: 
+End
+	Rarm: null
+		name: Blast Rod
+		gend: male
+		attr: Berserk
+		type: Bind
+		abil: Hold
+		ctrl: prox
+		armr: 35
+		succ: 14
+		powr: 14
+		cdmg: true
+		chrg: 12
+		cool: 16
+		modl: HBY
+		modn: 
+End
+	Larm: null
+		name: Yo-Yo
+		gend: male
+		attr: Interrupt
+		type: Regenerate
+		abil: Forcedrain
+		ctrl: remo
+		armr: 35
+		succ: 6
+		powr: 41
+		cdmg: false
+		chrg: 13
+		cool: 10
+		modl: HBY
+		modn: 
+End
+	Legs: null
+		name: Kendama
+		gend: male
+		attr: Wheels
+		type: Gravity
+		armr: 55
+		prop: 48
+		evas: 37
+		defn: 13
+		prox: 10
+		remo: 10
+
+
+		modl: HBY
+		modn: 
+End
+
+meda: Face Lantern
+	Head: null
+		name: Pan
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Defense
+		ctrl: remo
+		armr: 40
+		succ: 32
+		powr: 0
+		cdmg: false
+		uses: 10
+		modl: JOR
+		modn: 
+End
+	Rarm: null
+		name: Pun
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Defense
+		ctrl: remo
+		armr: 35
+		succ: 26
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 4
+		modl: JOR
+		modn: 
+End
+	Larm: null
+		name: Keen
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Defense
+		ctrl: remo
+		armr: 35
+		succ: 28
+		powr: 0
+		cdmg: false
+		chrg: 8
+		cool: 5
+		modl: JOR
+		modn: 
+End
+	Legs: null
+		name: Squashbasher
+		gend: male
+		attr: Wheels
+		type: Interrupt
+		armr: 50
+		prop: 53
+		evas: 27
+		defn: 25
+		prox: 4
+		remo: 16
+
+		modl: JOR
+		modn: 
+End
+
+meda: Landmotor
+	Head: null
+		name: Bodshot
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 40
+		succ: 18
+		powr: 52
+		cdmg: false
+		uses: 6
+		modl: CAR
+		modn: 
+End
+	Rarm: null
+		name: Anti-Missile
+		gend: male
+		attr: Shoot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 50
+		succ: 14
+		powr: 6
+		cdmg: true
+		chrg: 13
+		cool: 6
+		modl: CAR
+		modn: 
+End
+	Larm: null
+		name: Long Cannon
+		gend: male
+		attr: Aim Shot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 50
+		succ: 7
+		powr: 8
+		cdmg: true
+		chrg: 16
+		cool: 8
+		modl: CAR
+		modn: 
+End
+	Legs: null
+		name: Plasma Dash
+		gend: male
+		attr: Wheels
+		type: Anti-Air
+		armr: 50
+		prop: 43
+		evas: 32
+		defn: 25
+		prox: 4
+		remo: 19
+
+		modl: CAR
+		modn: 
+End
+
+meda: Stingray
+	Head: null
+		name: Plasma Laser
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Laser
+		ctrl: remo
+		armr: 40
+		succ: 14
+		powr: 40
+		cdmg: false
+		uses: 3
+		modl: RAY
+		modn: 
+End
+	Rarm: null
+		name: Track Laser
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Laser
+		ctrl: remo
+		armr: 35
+		succ: 26
+		powr: 20
+		cdmg: false
+		chrg: 10
+		cool: 4
+		modl: RAY
+		modn: 
+End
+	Larm: null
+		name: Chase Laser
+		gend: male
+		attr: Aim Shot
+		type: Optic
+		abil: Laser
+		ctrl: remo
+		armr: 35
+		succ: 13
+		powr: 30
+		cdmg: false
+		chrg: 13
+		cool: 5
+		modl: RAY
+		modn: 
+End
+	Legs: null
+		name: Shadow
+		gend: male
+		attr: Wheels
+		type: Optic
+		armr: 55
+		prop: 38
+		evas: 42
+		defn: 13
+		prox: 1
+		remo: 22
+
+		modl: RAY
+		modn: 
+End
+
+meda: Komandog
+	Head: null
+		name: Morningcall
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Stability
+		ctrl: prox
+		armr: 40
+		succ: 51
+		powr: 0
+		cdmg: false
+		uses: 8
+		modl: COM
+		modn: 
+End
+	Rarm: null
+		name: Right Beam
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Beam
+		ctrl: remo
+		armr: 35
+		succ: 14
+		powr: 23
+		cdmg: false
+		chrg: 14
+		cool: 6
+		modl: COM
+		modn: 
+End
+	Larm: null
+		name: Left Beam
+		gend: male
+		attr: Aim Shot
+		type: Optic
+		abil: Beam
+		ctrl: remo
+		armr: 35
+		succ: 7
+		powr: 35
+		cdmg: false
+		chrg: 18
+		cool: 8
+		modl: COM
+		modn: 
+End
+	Legs: null
+		name: Dog Race
+		gend: male
+		attr: Wheels
+		type: Optic
+		armr: 50
+		prop: 43
+		evas: 27
+		defn: 37
+		prox: 1
+		remo: 19
+
+
+		modl: COM
+		modn: 
+End
+
+meda: Magiclown
+	Head: null
+		name: Finale
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Stability
+		ctrl: prox
+		armr: 55
+		succ: 35
+		powr: 0
+		cdmg: false
+		uses: 10
+		modl: PIE
+		modn: 
+End
+	Rarm: null
+		name: Carnival
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 35
+		succ: 42
+		powr: 14
+		cdmg: true
+		chrg: 14
+		cool: 6
+		modl: PIE
+		modn: 
+End
+	Larm: null
+		name: Festival
+		gend: male
+		attr: Aim Shot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 35
+		succ: 21
+		powr: 21
+		cdmg: true
+		chrg: 18
+		cool: 8
+		modl: PIE
+		modn: 
+End
+	Legs: null
+		name: Balance-Ball
+		gend: male
+		attr: Wheels
+		type: Bomb
+		armr: 45
+		prop: 48
+		evas: 42
+		defn: 31
+		prox: 4
+		remo: 16
+
+		modl: PIE
+		modn: 
+End
+
+meda: Tankar
+	Head: null
+		name: Victory Armor
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Stability
+		ctrl: prox
+		armr: 85
+		succ: 27
+		powr: 0
+		cdmg: false
+		uses: 8
+		modl: BMT
+		modn: 
+End
+	Rarm: null
+		name: Vulcan
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 45
+		succ: 14
+		powr: 29
+		cdmg: false
+		chrg: 10
+		cool: 5
+		modl: BMT
+		modn: 
+End
+	Larm: null
+		name: Gatling Gun
+		gend: male
+		attr: Aim Shot
+		type: Shoot
+		abil: Chain Gun
+		ctrl: remo
+		armr: 45
+		succ: 7
+		powr: 44
+		cdmg: false
+		chrg: 13
+		cool: 6
+		modl: BMT
+		modn: 
+End
+	Legs: null
+		name: Armor Car
+		gend: male
+		attr: Wheels
+		type: Shoot
+		armr: 65
+		prop: 33
+		evas: 37
+		defn: 31
+		prox: 7
+		remo: 16
+
+		modl: BMT
+		modn: 
+End
+
+meda: Dr.Bokchoy
+	Head: null
+		name: Search Radar
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 70
+		succ: 12
+		powr: 28
+		cdmg: false
+		uses: 5
+		modl: BOK
+		modn: 
+End
+	Rarm: null
+		name: Point Radar
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 65
+		succ: 24
+		powr: 14
+		cdmg: false
+		chrg: 14
+		cool: 6
+		modl: BOK
+		modn: 
+End
+	Larm: null
+		name: Cut Radar
+		gend: male
+		attr: Support
+		type: Scout
+		abil: Scout
+		ctrl: remo
+		armr: 65
+		succ: 12
+		powr: 21
+		cdmg: false
+		chrg: 18
+		cool: 8
+		modl: BOK
+		modn: 
+End
+	Legs: null
+		name: Chairly
+		gend: male
+		attr: Wheels
+		type: Scout
+		armr: 60
+		prop: 43
+		evas: 22
+		defn: 25
+		prox: 13
+		remo: 13
+
+		modl: BOK
+		modn: 
+End
+
+meda: Snailoader
+	Head: null
+		name: Bat-Charge
+		gend: male
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 70
+		succ: 24
+		powr: 20
+		cdmg: false
+		uses: 8
+		modl: INT
+		modn: 
+End
+	Rarm: null
+		name: Charger
+		gend: male
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 65
+		succ: 32
+		powr: 10
+		cdmg: false
+		chrg: 10
+		cool: 8
+		modl: INT
+		modn: 
+End
+	Larm: null
+		name: Generator
+		gend: male
+		attr: Support
+		type: Time
+		abil: Boost Chrg
+		ctrl: remo
+		armr: 65
+		succ: 16
+		powr: 15
+		cdmg: false
+		chrg: 13
+		cool: 10
+		modl: INT
+		modn: 
+End
+	Legs: null
+		name: Snail
+		gend: male
+		attr: Wheels
+		type: Time
+		armr: 55
+		prop: 53
+		evas: 22
+		defn: 31
+		prox: 7
+		remo: 19
+
+
+		modl: INT
+		modn: 
+End
+
+meda: Cordy
+	Head: null
+		name: Mushroom
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Impair
+		ctrl: remo
+		armr: 60
+		succ: 20
+		powr: 0
+		cdmg: false
+		uses: 8
+		modl: KNK
+		modn: 
+End
+	Rarm: null
+		name: Shitake
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Escape
+		ctrl: remo
+		armr: 55
+		succ: 14
+		powr: 0
+		cdmg: false
+		chrg: 7
+		cool: 5
+		modl: KNK
+		modn: 
+End
+	Larm: null
+		name: Maitake
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: No Defense
+		ctrl: remo
+		armr: 55
+		succ: 18
+		powr: 0
+		cdmg: false
+		chrg: 9
+		cool: 6
+		modl: KNK
+		modn: 
+End
+	Legs: null
+		name: Funguton
+		gend: male
+		attr: Wheels
+		type: Interrupt
+		armr: 60
+		prop: 38
+		evas: 37
+		defn: 19
+		prox: 10
+		remo: 13
+
+
+
+		modl: KNK
+		modn: 
+End
+
+meda: Totalizer
+	Head: null
+		name: Tyranolaser
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Laser
+		ctrl: remo
+		armr: 55
+		succ: 9
+		powr: 54
+		cdmg: false
+		uses: 2
+		modl: TOT
+		modn: 
+End
+	Rarm: null
+		name: Megalaser
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Laser
+		ctrl: remo
+		armr: 40
+		succ: 12
+		powr: 33
+		cdmg: false
+		chrg: 18
+		cool: 9
+		modl: TOT
+		modn: 
+End
+	Larm: null
+		name: Gigalaser
+		gend: male
+		attr: Aim Shot
+		type: Optic
+		abil: Laser
+		ctrl: remo
+		armr: 40
+		succ: 6
+		powr: 50
+		cdmg: false
+		chrg: 23
+		cool: 11
+		modl: TOT
+		modn: 
+End
+	Legs: null
+		name: Rollertank
+		gend: male
+		attr: Tank
+		type: Optic
+		armr: 120
+		prop: 9
+		evas: 3
+		defn: 18
+		prox: 2
+		remo: 29
+
+		modl: TOT
+		modn: 
+End
+
+meda: Gentleheart
+	Head: null
+		name: Shotclear
+		gend: male
+		attr: Defend
+		type: Formation
+		abil: Attack Clr
+		ctrl: prox
+		armr: 30
+		succ: 15
+		powr: 0
+		cdmg: false
+		uses: 4
+		modl: GGR
+		modn: 
+End
+	Rarm: null
+		name: Grade Hammer
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 50
+		succ: 16
+		powr: 28
+		cdmg: false
+		chrg: 7
+		cool: 9
+		modl: GGR
+		modn: 
+End
+	Larm: null
+		name: Gold Hammer
+		gend: male
+		attr: Berserk
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 50
+		succ: 8
+		powr: 42
+		cdmg: true
+		chrg: 9
+		cool: 11
+		modl: GGR
+		modn: 
+End
+	Legs: null
+		name: Big Boots
+		gend: male
+		attr: Tank
+		type: Formation
+		armr: 130
+		prop: 3
+		evas: 3
+		defn: 24
+		prox: 8
+		remo: 17
+
+		modl: GGR
+		modn: 
+End
+
+meda: Landbrachio
+	Head: null
+		name: Anti-Skyer
+		gend: male
+		attr: Shoot
+		type: Anti-Air
+		abil: Anti-Air
+		ctrl: remo
+		armr: 60
+		succ: 9
+		powr: 12
+		cdmg: true
+		uses: 10
+		modl: BRA
+		modn: 
+End
+	Rarm: null
+		name: Rave-Luster
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Beam
+		ctrl: remo
+		armr: 60
+		succ: 6
+		powr: 31
+		cdmg: false
+		chrg: 18
+		cool: 9
+		modl: BRA
+		modn: 
+End
+	Larm: null
+		name: Ray-Masher
+		gend: male
+		attr: Aim Shot
+		type: Optic
+		abil: Beam
+		ctrl: remo
+		armr: 50
+		succ: 3
+		powr: 47
+		cdmg: false
+		chrg: 23
+		cool: 11
+		modl: BRA
+		modn: 
+End
+	Legs: null
+		name: Land-Leg
+		gend: male
+		attr: Tank
+		type: Anti-Air
+		armr: 120
+		prop: 6
+		evas: 0
+		defn: 12
+		prox: 5
+		remo: 23
+
+
+		modl: BRA
+		modn: 
+End
+
+meda: Dashbutton
+	Head: null
+		name: Switching
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Full Block
+		ctrl: prox
+		armr: 90
+		succ: 12
+		powr: 0
+		cdmg: false
+		uses: 1
+		modl: BOR
+		modn: 
+End
+	Rarm: null
+		name: Right-Ing
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 100
+		succ: 24
+		powr: 12
+		cdmg: false
+		chrg: 7
+		cool: 21
+		modl: BOR
+		modn: 
+End
+	Larm: null
+		name: Leftup
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 100
+		succ: 12
+		powr: 18
+		cdmg: false
+		chrg: 9
+		cool: 26
+		modl: BOR
+		modn: 
+End
+	Legs: null
+		name: Burly
+		gend: male
+		attr: Tank
+		type: Defense
+		armr: 140
+		prop: 0
+		evas: 9
+		defn: 0
+		prox: 11
+		remo: 20
+
+		modl: BOR
+		modn: 
+End
+
+meda: Snowbro
+	Head: null
+		name: Flip
+		gend: female
+		attr: Strike
+		type: Stop
+		abil: Freeze
+		ctrl: prox
+		armr: 40
+		succ: 6
+		powr: 23
+		cdmg: false
+		uses: 6
+		modl: SBL
+		modn: 
+End
+	Rarm: null
+		name: Flap
+		gend: female
+		attr: Strike
+		type: Stop
+		abil: Freeze
+		ctrl: prox
+		armr: 35
+		succ: 8
+		powr: 11
+		cdmg: false
+		chrg: 7
+		cool: 9
+		modl: SBL
+		modn: 
+End
+	Larm: null
+		name: Flop
+		gend: female
+		attr: Berserk
+		type: Stop
+		abil: Freeze
+		ctrl: prox
+		armr: 35
+		succ: 4
+		powr: 18
+		cdmg: true
+		chrg: 9
+		cool: 11
+		modl: SBL
+		modn: 
+End
+	Legs: null
+		name: Flavor
+		gend: female
+		attr: Tank
+		type: Stop
+		armr: 125
+		prop: 7
+		evas: 11
+		defn: 10
+		prox: 14
+		remo: 23
+
+		modl: SBL
+		modn: 
+End
+
+meda: Soniktank
+	Head: null
+		name: Blasto
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 65
+		succ: 12
+		powr: 42
+		cdmg: true
+		uses: 3
+		modl: HDG
+		modn: 
+End
+	Rarm: null
+		name: Burning Pin
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 60
+		succ: 20
+		powr: 21
+		cdmg: true
+		chrg: 17
+		cool: 9
+		modl: HDG
+		modn: 
+End
+	Larm: null
+		name: Burst Needle
+		gend: male
+		attr: Aim Shot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 60
+		succ: 10
+		powr: 32
+		cdmg: true
+		chrg: 21
+		cool: 11
+		modl: HDG
+		modn: 
+End
+	Legs: null
+		name: Block Tread
+		gend: male
+		attr: Tank
+		type: Bomb
+		armr: 110
+		prop: 9
+		evas: 6
+		defn: 0
+		prox: 14
+		remo: 23
+
+		modl: HDG
+		modn: 
+End
+
+meda: Giggly Jelly
+	Head: null
+		name: Missile Base
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 45
+		succ: 23
+		powr: 24
+		cdmg: true
+		uses: 6
+		modl: GEL
+		modn: 
+End
+	Rarm: null
+		name: Intermissile
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 40
+		succ: 30
+		powr: 12
+		cdmg: true
+		chrg: 8
+		cool: 4
+		modl: GEL
+		modn: 
+End
+	Larm: null
+		name: Guidemissile
+		gend: male
+		attr: Aim Shot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 40
+		succ: 15
+		powr: 18
+		cdmg: true
+		chrg: 10
+		cool: 5
+		modl: GEL
+		modn: 
+End
+	Legs: null
+		name: Limptank
+		gend: male
+		attr: Tank
+		type: Bomb
+		armr: 120
+		prop: 6
+		evas: 6
+		defn: 12
+		prox: 8
+		remo: 26
+
+
+		modl: GEL
+		modn: 
+End
+
+meda: Shamen
+	Head: null
+		name: Misstep
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Impair
+		ctrl: remo
+		armr: 45
+		succ: 36
+		powr: 0
+		cdmg: false
+		uses: 6
+		modl: MAG
+		modn: 
+End
+	Rarm: null
+		name: Slipstart
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Impair
+		ctrl: remo
+		armr: 40
+		succ: 28
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 5
+		modl: MAG
+		modn: 
+End
+	Larm: null
+		name: Slipend
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Impair
+		ctrl: remo
+		armr: 40
+		succ: 30
+		powr: 0
+		cdmg: false
+		chrg: 8
+		cool: 6
+		modl: MAG
+		modn: 
+End
+	Legs: null
+		name: Stepped
+		gend: male
+		attr: Tank
+		type: Interrupt
+		armr: 100
+		prop: 6
+		evas: 12
+		defn: 6
+		prox: 14
+		remo: 23
+
+		modl: MAG
+		modn: 
+End
+
+meda: Earthkrono
+	Head: null
+		name: Spare Head
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: DEF Change
+		ctrl: remo
+		armr: 70
+		succ: 30
+		powr: 0
+		cdmg: false
+		uses: 8
+		modl: GNM
+		modn: 
+End
+	Rarm: null
+		name: Spare Hand
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: DEF Change
+		ctrl: remo
+		armr: 65
+		succ: 20
+		powr: 0
+		cdmg: false
+		chrg: 10
+		cool: 9
+		modl: GNM
+		modn: 
+End
+	Larm: null
+		name: Spare Arm
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: DEF Change
+		ctrl: remo
+		armr: 65
+		succ: 24
+		powr: 0
+		cdmg: false
+		chrg: 13
+		cool: 11
+		modl: GNM
+		modn: 
+End
+	Legs: null
+		name: Spare Tank
+		gend: female
+		attr: Tank
+		type: Transform
+		armr: 115
+		prop: 11
+		evas: 7
+		defn: 20
+		prox: 8
+		remo: 29
+
+		modl: GNM
+		modn: 
+End
+
+meda: Gloomeg
+	Head: null
+		name: Tank Missile
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 65
+		succ: 15
+		powr: 30
+		cdmg: true
+		uses: 3
+		modl: GLM
+		modn: 
+End
+	Rarm: null
+		name: Homing
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 60
+		succ: 20
+		powr: 15
+		cdmg: true
+		chrg: 14
+		cool: 7
+		modl: GLM
+		modn: 
+End
+	Larm: null
+		name: Grenade
+		gend: male
+		attr: Aim Shot
+		type: Bomb
+		abil: Missile
+		ctrl: remo
+		armr: 60
+		succ: 10
+		powr: 23
+		cdmg: true
+		chrg: 18
+		cool: 9
+		modl: GLM
+		modn: 
+End
+	Legs: null
+		name: Block Tank
+		gend: male
+		attr: Tank
+		type: Bomb
+		armr: 120
+		prop: 12
+		evas: 0
+		defn: 12
+		prox: 2
+		remo: 23
+
+		modl: GLM
+		modn: 
+End
+
+meda: Megaphant
+	Head: null
+		name: Trample
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 55
+		succ: 15
+		powr: 26
+		cdmg: false
+		uses: 6
+		modl: ELF
+		modn: 
+End
+	Rarm: null
+		name: Right Guard
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 160
+		succ: 12
+		powr: 6
+		cdmg: false
+		chrg: 6
+		cool: 17
+		modl: ELF
+		modn: 
+End
+	Larm: null
+		name: Great Shield
+		gend: male
+		attr: Defend
+		type: Defense
+		abil: Defence
+		ctrl: prox
+		armr: 160
+		succ: 6
+		powr: 9
+		cdmg: false
+		chrg: 8
+		cool: 21
+		modl: ELF
+		modn: 
+End
+	Legs: null
+		name: Chauffeur
+		gend: male
+		attr: Tank
+		type: Defense
+		armr: 140
+		prop: 0
+		evas: 6
+		defn: 6
+		prox: 11
+		remo: 17
+
+
+		modl: ELF
+		modn: 
+End
+
+meda: Digmole
+	Head: null
+		name: Coverup
+		gend: male
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 75
+		succ: 14
+		powr: 30
+		cdmg: false
+		uses: 5
+		modl: MOG
+		modn: 
+End
+	Rarm: null
+		name: Trapbuster
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Break Form
+		ctrl: prox
+		armr: 55
+		succ: 28
+		powr: 0
+		cdmg: false
+		chrg: 8
+		cool: 13
+		modl: MOG
+		modn: 
+End
+	Larm: null
+		name: Barrierbuster
+		gend: male
+		attr: Heal
+		type: Release
+		abil: Break Form
+		ctrl: prox
+		armr: 55
+		succ: 14
+		powr: 0
+		cdmg: false
+		chrg: 10
+		cool: 16
+		modl: MOG
+		modn: 
+End
+	Legs: null
+		name: Shovel
+		gend: male
+		attr: Tank
+		type: Release
+		armr: 110
+		prop: 6
+		evas: 12
+		defn: 24
+		prox: 8
+		remo: 20
+
+		modl: MOG
+		modn: 
+End
+
+meda: Kingpharaoh
+	Head: null
+		name: Grand Bomb
+		gend: male
+		attr: Shoot
+		type: Bomb
+		abil: Napalm
+		ctrl: remo
+		armr: 45
+		succ: 8
+		powr: 60
+		cdmg: true
+		uses: 2
+		modl: EGT
+		modn: 
+End
+	Rarm: null
+		name: Black Hall
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Press
+		ctrl: remo
+		armr: 40
+		succ: 30
+		powr: 18
+		cdmg: false
+		chrg: 16
+		cool: 9
+		modl: EGT
+		modn: 
+End
+	Larm: null
+		name: Dark Hall
+		gend: male
+		attr: Aim Shot
+		type: Gravity
+		abil: Press
+		ctrl: remo
+		armr: 40
+		succ: 15
+		powr: 27
+		cdmg: false
+		chrg: 20
+		cool: 11
+		modl: EGT
+		modn: 
+End
+	Legs: null
+		name: Sit Down
+		gend: male
+		attr: Tank
+		type: Gravity
+		armr: 130
+		prop: 3
+		evas: 6
+		defn: 18
+		prox: 5
+		remo: 29
+
+		modl: EGT
+		modn: 
+End
+
+meda: Eggy
+	Head: null
+		name: Omelette
+		gend: male
+		attr: Interrupt
+		type: Transform
+		abil: Change
+		ctrl: remo
+		armr: 75
+		succ: 22
+		powr: 0
+		cdmg: false
+		uses: 8
+		modl: EGG
+		modn: 
+End
+	Rarm: null
+		name: Hamlette
+		gend: male
+		attr: Interrupt
+		type: Transform
+		abil: Change
+		ctrl: remo
+		armr: 70
+		succ: 16
+		powr: 0
+		cdmg: false
+		chrg: 10
+		cool: 9
+		modl: EGG
+		modn: 
+End
+	Larm: null
+		name: Ham-Egg
+		gend: male
+		attr: Interrupt
+		type: Transform
+		abil: Change
+		ctrl: remo
+		armr: 70
+		succ: 18
+		powr: 0
+		cdmg: false
+		chrg: 13
+		cool: 11
+		modl: EGG
+		modn: 
+End
+	Legs: null
+		name: Half-Egg
+		gend: male
+		attr: Tank
+		type: Transform
+		armr: 100
+		prop: 12
+		evas: 9
+		defn: 12
+		prox: 8
+		remo: 26
+
+
+		modl: EGG
+		modn: 
+End
+
+meda: Aquamar
+	Head: null
+		name: Scope Head
+		gend: male
+		attr: Shoot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 50
+		succ: 15
+		powr: 10
+		cdmg: true
+		uses: 9
+		modl: MRN
+		modn: 
+End
+	Rarm: null
+		name: Scope Hand
+		gend: male
+		attr: Shoot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 45
+		succ: 20
+		powr: 5
+		cdmg: true
+		chrg: 14
+		cool: 10
+		modl: MRN
+		modn: 
+End
+	Larm: null
+		name: Scope Arm
+		gend: male
+		attr: Aim Shot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 45
+		succ: 10
+		powr: 8
+		cdmg: true
+		chrg: 18
+		cool: 13
+		modl: MRN
+		modn: 
+End
+	Legs: null
+		name: Scope Leg
+		gend: male
+		attr: Sea
+		type: Anti-Sea
+		armr: 60
+		prop: 22
+		evas: 68
+		defn: 73
+		prox: 23
+		remo: 5
+
+
+		modl: MRN
+		modn: 
+End
+
+meda: Kappalord
+	Head: null
+		name: Plate Beam
+		gend: male
+		attr: Shoot
+		type: Optic
+		abil: Beam
+		ctrl: remo
+		armr: 45
+		succ: 5
+		powr: 60
+		cdmg: false
+		uses: 3
+		modl: KAP
+		modn: 
+End
+	Rarm: null
+		name: Underwater Flo
+		gend: male
+		attr: Shoot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 60
+		succ: 16
+		powr: 6
+		cdmg: true
+		chrg: 18
+		cool: 12
+		modl: KAP
+		modn: 
+End
+	Larm: null
+		name: Undersea Flo
+		gend: male
+		attr: Shoot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 60
+		succ: 8
+		powr: 9
+		cdmg: true
+		chrg: 23
+		cool: 15
+		modl: KAP
+		modn: 
+End
+	Legs: null
+		name: Anti-Stand
+		gend: male
+		attr: Sea
+		type: Optic
+		armr: 65
+		prop: 12
+		evas: 78
+		defn: 67
+		prox: 23
+		remo: 11
+
+		modl: KAP
+		modn: 
+End
+
+meda: Flatstick
+	Head: null
+		name: Slipper
+		gend: male
+		attr: Strike
+		type: Movement
+		abil: Bug
+		ctrl: prox
+		armr: 45
+		succ: 14
+		powr: 24
+		cdmg: false
+		uses: 7
+		modl: MNT
+		modn: 
+End
+	Rarm: null
+		name: Accident
+		gend: male
+		attr: Strike
+		type: Movement
+		abil: Bug
+		ctrl: prox
+		armr: 40
+		succ: 18
+		powr: 12
+		cdmg: false
+		chrg: 8
+		cool: 16
+		modl: MNT
+		modn: 
+End
+	Larm: null
+		name: Troubler
+		gend: male
+		attr: Berserk
+		type: Movement
+		abil: Bug
+		ctrl: prox
+		armr: 40
+		succ: 9
+		powr: 18
+		cdmg: true
+		chrg: 10
+		cool: 20
+		modl: MNT
+		modn: 
+End
+	Legs: null
+		name: Speartail
+		gend: male
+		attr: Sea
+		type: Movement
+		armr: 70
+		prop: 7
+		evas: 68
+		defn: 85
+		prox: 23
+		remo: 2
+
+		modl: MNT
+		modn: 
+End
+
+meda: Flig Flag
+	Head: null
+		name: Pop-N-Eye
+		gend: male
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 50
+		succ: 18
+		powr: 36
+		cdmg: false
+		uses: 7
+		modl: FLG
+		modn: 
+End
+	Rarm: null
+		name: Amphibi-Hand
+		gend: male
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 45
+		succ: 24
+		powr: 18
+		cdmg: false
+		chrg: 12
+		cool: 8
+		modl: FLG
+		modn: 
+End
+	Larm: null
+		name: Amphibi-Arm
+		gend: male
+		attr: Support
+		type: Conceal
+		abil: Conceal
+		ctrl: remo
+		armr: 45
+		succ: 12
+		powr: 27
+		cdmg: false
+		chrg: 15
+		cool: 10
+		modl: FLG
+		modn: 
+End
+	Legs: null
+		name: Amphibi-Leg
+		gend: male
+		attr: Sea
+		type: Conceal
+		armr: 65
+		prop: 17
+		evas: 73
+		defn: 61
+		prox: 26
+		remo: 8
+
+		modl: FLG
+		modn: 
+End
+
+meda: Orkamar
+	Head: null
+		name: New Wave
+		gend: male
+		attr: Strike
+		type: Bind
+		abil: Wave
+		ctrl: prox
+		armr: 35
+		succ: 15
+		powr: 20
+		cdmg: false
+		uses: 5
+		modl: KIL
+		modn: 
+End
+	Rarm: null
+		name: Clinch Wave
+		gend: male
+		attr: Strike
+		type: Bind
+		abil: Wave
+		ctrl: prox
+		armr: 30
+		succ: 20
+		powr: 10
+		cdmg: false
+		chrg: 10
+		cool: 18
+		modl: KIL
+		modn: 
+End
+	Larm: null
+		name: Nibble Wave
+		gend: male
+		attr: Berserk
+		type: Bind
+		abil: Wave
+		ctrl: prox
+		armr: 30
+		succ: 10
+		powr: 15
+		cdmg: true
+		chrg: 13
+		cool: 23
+		modl: KIL
+		modn: 
+End
+	Legs: null
+		name: Fishtail
+		gend: male
+		attr: Sea
+		type: Bind
+		armr: 55
+		prop: 12
+		evas: 73
+		defn: 79
+		prox: 29
+		remo: 5
+
+
+		modl: KIL
+		modn: 
+End
+
+meda: Aviking
+	Head: null
+		name: Enticed
+		gend: male
+		attr: Aim Shot
+		type: Destroy
+		abil: Missile
+		ctrl: remo
+		armr: 35
+		succ: 30
+		powr: 28
+		cdmg: false
+		uses: 5
+		modl: KNG
+		modn: 
+End
+	Rarm: null
+		name: Burst
+		gend: male
+		attr: Aim Shot
+		type: Destroy
+		abil: Sacrifice
+		ctrl: remo
+		armr: 25
+		succ: 72
+		powr: 42
+		cdmg: true
+		chrg: 12
+		cool: 8
+		modl: KNG
+		modn: 
+End
+	Larm: null
+		name: Pro-Fence
+		gend: male
+		attr: Aim Shot
+		type: Destroy
+		abil: Sacrifice
+		ctrl: remo
+		armr: 25
+		succ: 36
+		powr: 63
+		cdmg: true
+		chrg: 15
+		cool: 10
+		modl: KNG
+		modn: 
+End
+	Legs: null
+		name: Depth-Sole
+		gend: male
+		attr: Sea
+		type: Destroy
+		armr: 75
+		prop: 2
+		evas: 73
+		defn: 73
+		prox: 20
+		remo: 11
+
+		modl: KNG
+		modn: 
+End
+
+meda: Starpeda
+	Head: null
+		name: Hamster Bite
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Sword
+		ctrl: prox
+		armr: 35
+		succ: 23
+		powr: 40
+		cdmg: false
+		uses: 3
+		modl: SFH
+		modn: 
+End
+	Rarm: null
+		name: Starnet
+		gend: male
+		attr: Interrupt
+		type: Interrupt
+		abil: Impair
+		ctrl: remo
+		armr: 30
+		succ: 60
+		powr: 0
+		cdmg: false
+		chrg: 6
+		cool: 8
+		modl: SFH
+		modn: 
+End
+	Larm: null
+		name: Blaze Shield
+		gend: male
+		attr: Defend
+		type: Counterattack
+		abil: CntrAttk
+		ctrl: prox
+		armr: 80
+		succ: 6
+		powr: 70
+		cdmg: false
+		chrg: 10
+		cool: 13
+		modl: SFH
+		modn: 
+End
+	Legs: null
+		name: Starfish
+		gend: male
+		attr: Sea
+		type: Grapple
+		armr: 60
+		prop: 12
+		evas: 83
+		defn: 73
+		prox: 20
+		remo: 8
+
+		modl: SFH
+		modn: 
+End
+
+meda: Fireflash
+	Head: null
+		name: Watergun
+		gend: female
+		attr: Shoot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 45
+		succ: 9
+		powr: 18
+		cdmg: true
+		uses: 9
+		modl: FFY
+		modn: 
+End
+	Rarm: null
+		name: Shower
+		gend: female
+		attr: Shoot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 40
+		succ: 12
+		powr: 9
+		cdmg: true
+		chrg: 14
+		cool: 10
+		modl: FFY
+		modn: 
+End
+	Larm: null
+		name: Klench
+		gend: female
+		attr: Shoot
+		type: Anti-Sea
+		abil: Anti-Sea
+		ctrl: remo
+		armr: 40
+		succ: 6
+		powr: 14
+		cdmg: true
+		chrg: 18
+		cool: 13
+		modl: FFY
+		modn: 
+End
+	Legs: null
+		name: Luminous
+		gend: female
+		attr: Sea
+		type: Anti-Sea
+		armr: 60
+		prop: 26
+		evas: 82
+		defn: 61
+		prox: 20
+		remo: 14
+
+		modl: FFY
+		modn: 
+End
+
+meda: Aquacrown
+	Head: null
+		name: Sacrifice Head
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: HealChange
+		ctrl: remo
+		armr: 45
+		succ: 30
+		powr: 0
+		cdmg: false
+		uses: 7
+		modl: WON
+		modn: 
+End
+	Rarm: null
+		name: Sacrifice Hand
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: HealChange
+		ctrl: remo
+		armr: 40
+		succ: 20
+		powr: 0
+		cdmg: false
+		chrg: 8
+		cool: 10
+		modl: WON
+		modn: 
+End
+	Larm: null
+		name: Sacrifice Arm
+		gend: female
+		attr: Interrupt
+		type: Transform
+		abil: HealChange
+		ctrl: remo
+		armr: 40
+		succ: 24
+		powr: 0
+		cdmg: false
+		chrg: 10
+		cool: 13
+		modl: WON
+		modn: 
+End
+	Legs: null
+		name: Sacrifice Fin
+		gend: female
+		attr: Sea
+		type: Transform
+		armr: 70
+		prop: 8
+		evas: 94
+		defn: 56
+		prox: 23
+		remo: 8
+
+
+		modl: WON
+		modn: 
+End
+
+meda: Sharkkan
+	Head: null
+		name: Power Driver
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 55
+		succ: 36
+		powr: 16
+		cdmg: false
+		uses: 7
+		modl: SAK
+		modn: 
+End
+	Rarm: null
+		name: Plus Driver
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 50
+		succ: 48
+		powr: 8
+		cdmg: false
+		chrg: 14
+		cool: 10
+		modl: SAK
+		modn: 
+End
+	Larm: null
+		name: Minus Driver
+		gend: male
+		attr: Aim Shot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 50
+		succ: 24
+		powr: 12
+		cdmg: false
+		chrg: 18
+		cool: 13
+		modl: SAK
+		modn: 
+End
+	Legs: null
+		name: Smacker
+		gend: male
+		attr: Sea
+		type: Gravity
+		armr: 65
+		prop: 17
+		evas: 63
+		defn: 79
+		prox: 17
+		remo: 14
+
+		modl: SAK
+		modn: 
+End
+
+meda: Oceana
+	Head: null
+		name: Allrepair
+		gend: female
+		attr: Heal
+		type: Heal
+		abil: Recovery
+		ctrl: prox
+		armr: 30
+		succ: 18
+		powr: 45
+		cdmg: false
+		uses: 5
+		modl: MAR
+		modn: 
+End
+	Rarm: null
+		name: Cure Hand
+		gend: female
+		attr: Heal
+		type: Heal
+		abil: Recovery
+		ctrl: prox
+		armr: 35
+		succ: 18
+		powr: 23
+		cdmg: false
+		chrg: 10
+		cool: 17
+		modl: MAR
+		modn: 
+End
+	Larm: null
+		name: Repair Arm
+		gend: female
+		attr: Heal
+		type: Heal
+		abil: Recovery
+		ctrl: prox
+		armr: 35
+		succ: 9
+		powr: 34
+		cdmg: false
+		chrg: 13
+		cool: 21
+		modl: MAR
+		modn: 
+End
+	Legs: null
+		name: Purple Fins
+		gend: female
+		attr: Sea
+		type: Heal
+		armr: 65
+		prop: 14
+		evas: 76
+		defn: 66
+		prox: 29
+		remo: 11
+
+		modl: MAR
+		modn: 
+End
+
+meda: Pingen
+	Head: null
+		name: Reza-Rector
+		gend: female
+		attr: Heal
+		type: Revive
+		abil: Repair
+		ctrl: prox
+		armr: 30
+		succ: 14
+		powr: 28
+		cdmg: false
+		uses: 5
+		modl: PEN
+		modn: 
+End
+	Rarm: null
+		name: Free Arm
+		gend: female
+		attr: Heal
+		type: Revive
+		abil: Repair
+		ctrl: prox
+		armr: 25
+		succ: 18
+		powr: 14
+		cdmg: false
+		chrg: 8
+		cool: 14
+		modl: PEN
+		modn: 
+End
+	Larm: null
+		name: New Arm
+		gend: female
+		attr: Heal
+		type: Revive
+		abil: Repair
+		ctrl: prox
+		armr: 25
+		succ: 15
+		powr: 21
+		cdmg: false
+		chrg: 10
+		cool: 18
+		modl: PEN
+		modn: 
+End
+	Legs: null
+		name: Fin
+		gend: female
+		attr: Sea
+		type: Revive
+		armr: 55
+		prop: 20
+		evas: 88
+		defn: 71
+		prox: 26
+		remo: 5
+
+		modl: PEN
+		modn: 
+End
+
+meda: Wolfeel
+	Head: null
+		name: Concealing
+		gend: male
+		attr: Defend
+		type: Counterattack
+		abil: Strengthen
+		ctrl: prox
+		armr: 20
+		succ: 15
+		powr: 12
+		cdmg: false
+		uses: 0
+		modl: WLH
+		modn: 
+End
+	Rarm: null
+		name: Konpinch
+		gend: male
+		attr: Strike
+		type: Stop
+		abil: Thunder
+		ctrl: prox
+		armr: 20
+		succ: 12
+		powr: 14
+		cdmg: false
+		chrg: 10
+		cool: 18
+		modl: WLH
+		modn: 
+End
+	Larm: null
+		name: Konplier
+		gend: male
+		attr: Berserk
+		type: Stop
+		abil: Thunder
+		ctrl: prox
+		armr: 20
+		succ: 6
+		powr: 21
+		cdmg: true
+		chrg: 13
+		cool: 23
+		modl: WLH
+		modn: 
+End
+	Legs: null
+		name: Duck Under
+		gend: male
+		attr: Sea
+		type: Counterattack
+		armr: 70
+		prop: 7
+		evas: 78
+		defn: 67
+		prox: 26
+		remo: 8
+		modl: WLH
+		modn: 
+End
+
+
+meda: Bretoran
+	Head: null
+		name: Flintcan
+		gend: male
+		attr: Shoot
+		type: Gravity
+		abil: Break
+		ctrl: remo
+		armr: 40
+		succ: 53
+		powr: 12
+		cdmg: false
+		uses: 10
+		modl: BET
+		modn: 
+End
+	Rarm: null
+		name: Blunder
+		gend: male
+		attr: Strike
+		type: Grapple
+		abil: Hammer
+		ctrl: prox
+		armr: 30
+		succ: 32
+		powr: 25
+		cdmg: false
+		chrg: 3
+		cool: 4
+		modl: BET
+		modn: 
+End
+	Larm: null
+		name: Twint
+		gend: male
+		attr: Shoot
+		type: Shoot
+		abil: Rifle
+		ctrl: remo
+		armr: 20
+		succ: 36
+		powr: 15
+		cdmg: false
+		chrg: 4
+		cool: 3
+		modl: BET
+		modn: 
+End
+	Legs: null
+		name: Blanmers
+		gend: male
+		attr: Two-Legged
+		type: Grapple
+		armr: 50
+		prop: 28
+		evas: 32
+		defn: 36
+		prox: 22
+		remo: 9
+
+		modl: BET
+		modn: 
+End
+

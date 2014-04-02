@@ -1,0 +1,16 @@
+width=16
+height=20
+warps
+    0
+		x=0
+		y=10
+		tMap=Lab Lobby
+		tX=27
+		tY=9
+	1
+		x=11
+		y=19
+		tMap=Riverview City
+		tX=24
+		tY=7
+npcs

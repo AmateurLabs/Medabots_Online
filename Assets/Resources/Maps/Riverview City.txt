@@ -1,0 +1,91 @@
+width=29
+height=28
+warps
+	0
+		x=18
+		y=6
+		tMap=Lab Lobby
+		tX=18
+		tY=14
+	1
+		x=24
+		y=6
+		tMap=Lab Museum
+		tX=11
+		tY=18
+shops
+	0
+		name=Riverview Hopmart
+		id=1
+		x=22
+		y=12
+npcs
+	0
+		name=Ikki
+		x=12
+		y=17
+		outfit
+			name=
+			playerId=-1
+			base=0
+			top=0
+			bottom=0
+			shoes=0
+			coat=0
+			eyes=0
+			mask=0
+			hair=0
+		bots
+			0
+				medal
+					type=6
+					item=0
+					meta
+						name=Metabee
+						type=0
+						level=1
+				head
+					type=1
+					item=119
+				larm
+					type=2
+					item=119
+				rarm
+					type=3
+					item=119
+				legs
+					type=4
+					item=119
+				tinpet
+					type=5
+					item=0
+				
+		convo
+			0
+				text=Hello!
+				choices
+					0
+						text=Hi!
+						node=1
+					1
+						text=Goodbye!
+						node=-1
+			1
+				text=How are you?
+				choices
+					0
+						text=Let's robattle!
+						node=2
+					1
+						text=See ya!
+						node=-1
+			2
+				text=Nice battle!
+				battle=true
+				choices
+					0
+						text=Thanks!
+						node=-1
+					1
+						text=Rematch!
+						node=2
