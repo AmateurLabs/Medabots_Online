@@ -32,14 +32,18 @@ public class Data : MonoBehaviour {
 	
 	public IEnumerator Start() {
 		if (statNode == null) {
+            Debug.Log("Downloading Medastats");
 			WWW www = new WWW("http://www.amateurlabs.com/mbo/MedaStats.ald");
 			yield return www;
 			statNode = ALDNode.ParseString(www.text);
+            Debug.Log("Finished downloading Medastats");
 		}
 		if (itemNode == null) {
+            Debug.Log("Downloading Items");
 			WWW www = new WWW("http://www.amateurlabs.com/mbo/Items.ald");
 			yield return www;
 			itemNode = ALDNode.ParseString(www.text);
+            Debug.Log("Finished downloading Items");
 		}
 		Load();
 		isReady = true;

@@ -7,11 +7,13 @@ public class Boot : MonoBehaviour {
 	public bool go = false;
 	public bool loading = false;
 
-    void Awake()
-    {
-        Application.RegisterLogCallback((string msg, string stack, LogType type) => {
-            Application.ExternalEval("if (console) { console.log(\"" + type + "|" + msg + "|" + stack + "\")}");
-        });
+    void Awake() {
+        Application.RegisterLogCallback(OnLog);
+        Debug.Log("Logging Enabled");
+    }
+
+    void OnLog(string msg, string stack, LogType type) {
+        Application.ExternalEval("if (console && console.log) { console.log('" + type + "|" + msg + "|" + stack + "') }");
     }
 	
 	void Update() {
