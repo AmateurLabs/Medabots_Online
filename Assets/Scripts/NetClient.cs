@@ -396,6 +396,28 @@ public class NetClient : MonoBehaviour {
 		if (b == null) return;
 		b.SetAbility(b.bots[bot], (PartIndex)part);
 	}
+
+    [RPC]
+    public void SetBotState(int bot, int state) {
+        BotState s = (BotState)state;
+        Battle b = Battler.use.battle;
+        if (b == null) return;
+        b.bots[bot].state = s;
+        if (s == BotState.Cooling) {
+            float diff = b.bots[bot].charge - b.bots[bot].maxCharge;
+            b.bots[bot].charge -= diff;
+        }
+        else {
+            PartIndex part = b.bots[bot].usePart;
+            int chrg = 0;
+            if (part == PartIndex.Head) chrg = 10;
+            else if (part == PartIndex.LArm) chrg = b.bots[bot].lArm.t.charge;
+            else if (part == PartIndex.RArm) chrg = b.bots[bot].rArm.t.charge;
+            else chrg = 10;
+            b.bots[bot].maxCharge = chrg;
+            b.bots[bot].charge = -b.bots[bot].charge;
+        }
+    }
 	
 	[RPC]
 	public void Message(string msg) {

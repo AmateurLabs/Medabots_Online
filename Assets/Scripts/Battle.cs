@@ -14,9 +14,11 @@ public class Battle {
 
 	public BattleFlags flags;
 
-	public float pauseTime = 0;
-
 	public Bot[] bots = new Bot[6];
+
+    public bool paused;
+
+    Line cmdLine;
 
 	public Battle(Player atk, Player def) {
 		attacker = atk;
@@ -26,36 +28,65 @@ public class Battle {
 		battles.Add(nextId, this);
 		id = nextId;
 		nextId++;
+
+        if (Game.isClient) cmdLine = Line.Create();
 	}
 
 	public void Update() {
-		bool paused = false;
-		if (pauseTime > 0f) {
-			pauseTime -= Time.deltaTime;
-			paused = true;
-		}
+		paused = false;
 		for (int i = 0; i < 6; i++) {
 			if (bots[i] == null) continue;
 			if (bots[i].state == BotState.Standby || bots[i].state == BotState.Attacking) {
 				paused = true;
+                pausedBot = i;
+                if (bots[i].state == BotState.Standby) {
+                    if (Game.isClient) {
+                        Vector2 o = new Vector2((i < 3) ? 160 : 512 - 192, 80 + 8 + 256 + -128 * (i % 3)) - new Vector2(256f, 256f);
+                        cmdLine.Set(new Vector3(o.x, o.y - 10f, -10.5f), new Vector3(0f, -256f + 64f, -10.5f), Color.yellow);
+                    }
+                }else{
+                    if (Game.isClient) {
+                        int targ = bots[i][(int)bots[i].usePart].t.ability.findTarget(this, bots[i]);
+                        if (targ < 0 || targ >= 6) {
+                            cmdLine.Set(Vector3.one * 2048f, Vector3.one * 2048f, Color.black);
+                        }
+                        else {
+                            Vector2 o = new Vector2((i < 3) ? 160 : 512 - 192, 80 + 8 + 256 + -128 * (i % 3)) - new Vector2(256f, 256f);
+                            Vector2 o2 = new Vector2((targ < 3) ? 160 : 512 - 192, 80 + 8 + 256 + -128 * (targ % 3)) - new Vector2(256f, 256f);
+                            cmdLine.Set(new Vector3(o.x, o.y - 10f, -10.5f), new Vector3(o2.x, o2.y - 10f, -10.5f), Color.red);
+                        }
+                    }
+                }
+                break;
 			}
 		}
-		if (paused) return;
+        if (cmdLine != null) cmdLine.line.enabled = paused && (bots[pausedBot].state == BotState.Attacking || bots[pausedBot].state == BotState.Standby);
+        if (paused) return;
 		for (int i = 0; i < 6; i++) {
 			if (bots[i] == null) continue;
 			if (bots[i].state == BotState.Charging && bots[i].charge >= bots[i].maxCharge) {
-				bots[i].state = BotState.Attacking;
+                if (Game.isServer) {
+                    bots[i].state = BotState.Attacking;
+                    NetServer.use.SendRPC("SetBotState", ((ServerPlayer)attacker).netPlayer, i, (int)BotState.Attacking);
+                    NetServer.use.SendRPC("SetBotState", ((ServerPlayer)defender).netPlayer, i, (int)BotState.Attacking);
+                }
 				if (Game.isServer) {
 					int r0 = Random.Range(0, 256);
 					int r1 = Random.Range(0, 256);
 					Bot target = null;
 					int targ = bots[i][(int)bots[i].usePart].t.ability.findTarget(this, bots[i]);
-					if (targ >= 0 && targ < 6 && bots[targ] != null) target = bots[targ];
+                    if (targ >= 0 && targ < 6 && bots[targ] != null) {
+                        target = bots[targ];
+                    }
 					UseAbility(bots[i], target, bots[i].usePart, (byte)r0, (byte)r1);
 				}
 				return;
 			} else if (bots[i].state == BotState.Cooling && bots[i].charge <= 0) {
-				bots[i].state = BotState.Standby;
+                if (Game.isServer) {
+                    bots[i].state = BotState.Standby;
+                    NetServer.use.SendRPC("SetBotState", ((ServerPlayer)attacker).netPlayer, i, (int)BotState.Standby);
+                    NetServer.use.SendRPC("SetBotState", ((ServerPlayer)defender).netPlayer, i, (int)BotState.Standby);
+                }
 				if (Game.isServer && bots[i].owner.userlevel == UserLevel.NPC) {
 					int part = Random.Range(0, 4);
 					SetAbility(bots[i], (PartIndex)part);
@@ -71,6 +102,7 @@ public class Battle {
 	}
 
     public static Texture2D statusTex = Resources.Load<Texture2D>("GUI/statusicons");
+    public int pausedBot = -1;
 
 	public void OnGUI() {
 		GUI.skin.label.alignment = TextAnchor.MiddleCenter;
@@ -81,7 +113,7 @@ public class Battle {
 		for (int i = 0; i < 6; i++) {
 			if (bots[i] != null) {
 				Bot bot = bots[i];
-				Vector2 o = new Vector2((i < 3) ? 0 : 512 - 96, 96 + 8 + 128 * (i % 3));
+				Vector2 o = new Vector2((i < 3) ? 0 : 512 - 96, 80 + 8 + 128 * (i % 3));
 				GUI.Label(new Rect(o.x, o.y-20f, 96f, 24f), bot.medal.name, "GBA");
 				bool flip = i < 3;
 				XGUI.ValueBar(new Rect(o.x, o.y, 96f, 24f), ((float)bot.head.armor / (float)bot.head.t.armor), bot.head.t.name, Color.green, !flip);
@@ -91,15 +123,22 @@ public class Battle {
 				XGUI.ValueBar(new Rect(o.x, o.y+64f, 96f, 24f), ((float)bot.medal.medaforce / 80f), bot.medal.t.name, Color.cyan, !flip);
 				if (flip) XGUI.ValueBar(new Rect(o.x, o.y + 80f, 192f, 24f), (bot.charge / bot.maxCharge), bot.state.ToString(), Color.yellow, !flip);
 				else XGUI.ValueBar(new Rect(o.x - 96f, o.y + 80f, 192f, 24f), (bot.charge / bot.maxCharge), bot.state.ToString(), Color.yellow, !flip);
-				if (GUI.Button(new Rect(o.x, o.y + 4f, 96f, 16f), "", "label")) NetClient.use.AskSetAbility(i, PartIndex.Head);
-				if (GUI.Button(new Rect(o.x, o.y + 4f + 16f, 96f, 16f), "", "label")) NetClient.use.AskSetAbility(i, PartIndex.LArm);
-				if (GUI.Button(new Rect(o.x, o.y + 4f + 32f, 96f, 16f), "", "label")) NetClient.use.AskSetAbility(i, PartIndex.RArm);
-				if (GUI.Button(new Rect(o.x, o.y + 4f + 48f, 96f, 16f), "", "label")) NetClient.use.AskSetAbility(i, PartIndex.Legs);
-                bot.status = (StatusEffect)(Mathf.RoundToInt(Time.time) % 17);
+                //bot.status = (StatusEffect)(Mathf.RoundToInt(Time.time) % 17);
                 GUI.DrawTextureWithTexCoords(new Rect(o.x + (flip ? 192 - 16 : -96), o.y - 16f, 16f, 16f), statusTex, new Rect(0.0625f * ((int)bot.status - 1), 0f, 0.0625f, 1f));
 			}
 		}
-		if (GUI.Button(new Rect(512f - 64f, 512 - 16f, 64f, 16f), "Forfeit")) {
+        if (paused && bots[pausedBot] != null && bots[pausedBot].state == BotState.Standby) {
+            for (int pi = 0; pi < 4; pi++) {
+                Part p = bots[pausedBot][pi];
+                string btnText = p.t.ability.name + "\n" + p.t.type;
+                if (p is Head) btnText += "\nUses: " + ((Head)p).uses;
+                if (p is Legs) btnText = "Charge Medaforce";
+                if (GUI.Button(new Rect(128f * pi, 512f-64f, 128f, 64f), btnText)) {
+                    NetClient.use.AskSetAbility(pausedBot, (PartIndex)pi);
+                }
+            }
+        }
+		if (GUI.Button(new Rect(512f - 64f, 0f, 64f, 16f), "Forfeit")) {
 			NetClient.use.AskQuitBattle();
 		}
 	}
@@ -110,14 +149,19 @@ public class Battle {
 			NetServer.use.SendRPC("SetAbility", ((ServerPlayer)defender).netPlayer, Find(bot), (int)part);
 		}
 		bot.usePart = part;
-		int chrg = 0;
-		if (part == PartIndex.Head) chrg = 10;
-		else if (part == PartIndex.LArm) chrg = bot.lArm.t.charge;
-		else if (part == PartIndex.RArm) chrg = bot.rArm.t.charge;
-		else chrg = 10;
-		bot.maxCharge = chrg;
-		bot.state = BotState.Charging;
-		bot.charge = -bot.charge;
+        if (Game.isServer) {
+            bot.state = BotState.Charging;
+            int chrg = 0;
+            if (part == PartIndex.Head) chrg = 10;
+            else if (part == PartIndex.LArm) chrg = bot.lArm.t.charge;
+            else if (part == PartIndex.RArm) chrg = bot.rArm.t.charge;
+            else chrg = 10;
+            bot.maxCharge = chrg;
+            bot.charge = -bot.charge;
+            NetServer.use.SendRPC("SetBotState", ((ServerPlayer)attacker).netPlayer, Find(bot), (int)BotState.Charging);
+            NetServer.use.SendRPC("SetBotState", ((ServerPlayer)defender).netPlayer, Find(bot), (int)BotState.Charging);
+        }
+		
 	}
 
 	public void UseAbility(Bot bot, Bot targ, PartIndex part, byte rand0, byte rand1) {
@@ -132,12 +176,35 @@ public class Battle {
 		}
 		if (charge) Log(bot.medal.name + " focused its energy.");
 		else Log(bot.medal.name + " used its " + p.t.name + "! " + p.t.type + "-action " + p.t.ability.name + "!");
-
-		a.execute(this, bot, targ, p, rand0, rand1);
-		bot.state = BotState.Cooling;
-		bot.charge -= diff;
-		pauseTime = 3f;
+        if (p.armor == 0) {
+            Battle.Log(bot.medal.name + " can't use its broken " + p.t.name + "!");
+        }else if (p is Head) {
+            Head head = (Head)p;
+            if (head.uses > 0) {
+                head.uses--;
+                a.execute(this, bot, targ, p, rand0, rand1);
+            }
+            else {
+                Battle.Log(bot.medal.name + "'s " + p.t.name + " has no more uses left!");
+            }
+        }
+        else {
+            a.execute(this, bot, targ, p, rand0, rand1);
+        }
+        if (Game.isServer) {
+            Data.use.StartCoroutine(DoAfter(3f, () => {
+                bot.state = BotState.Cooling;
+                bot.charge -= diff;
+                NetServer.use.SendRPC("SetBotState", ((ServerPlayer)attacker).netPlayer, Find(bot), (int)BotState.Cooling);
+                NetServer.use.SendRPC("SetBotState", ((ServerPlayer)defender).netPlayer, Find(bot), (int)BotState.Cooling);
+            }));
+        }
 	}
+
+    private static IEnumerator DoAfter(float time, System.Action action) {
+        yield return new WaitForSeconds(time);
+        action();
+    }
 
 	public static void Log(string text) {
 		//if (Game.isServer) NetServer.use.Log(text);

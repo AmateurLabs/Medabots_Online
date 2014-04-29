@@ -693,5 +693,6 @@ public class NetServer : MonoBehaviour {
 	[RPC] public void GetBattleBots(byte[] bytes) { }
 	[RPC] public void UseAbility(int bot, int targ, int part, int r0, int r1) { }
 	[RPC] public void SetAbility(int bot, int part) { }
+    [RPC] public void SetBotState(int bot, int state) { }
 	[RPC] public void Message(string msg) { }
 }

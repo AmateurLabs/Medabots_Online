@@ -124,6 +124,7 @@ public class Head : WepPart {
 	
 	public Head(THead t) : base(t) {
 		this.t = t;
+        uses = t.uses;
 	}
 }
 

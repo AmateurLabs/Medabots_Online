@@ -7,5 +7,6 @@ public class UVScroll : MonoBehaviour {
 	
 	void Update () {
 		renderer.material.mainTextureOffset += speed * Time.deltaTime;
+        
 	}
 }

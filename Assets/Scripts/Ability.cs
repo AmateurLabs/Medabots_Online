@@ -65,10 +65,6 @@ public class Ability {
 		};
 		ExecuteAbility attackExecute = (battle, bot, targ, atkPart, r0, r1) => {
 			WepPart part = (WepPart)atkPart;
-			if (part.armor == 0) {
-				Battle.Log(bot.medal.name + " can't use its broken " + part.t.name + "!");
-				return;
-			}
 			if (targ == null) {
 				Battle.Log(bot.medal.name + " has no valid targets to use its " + part.t.name + " on!");
 				return;
